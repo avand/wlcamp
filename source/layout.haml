@@ -23,7 +23,9 @@
     -# Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
     
     -# CSS: implied media="all"
-    %link{ :href => "css/style.css?v=1", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/reset.css?v=1", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/grid.css?v=1", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
     
     -# All JavaScript at the bottom, except for Modernizr and Respond.
     -# Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
@@ -31,11 +33,12 @@
     %script{ :src => "js/respond.min.js" }
     
   %body
-    #container
-      %header
-      #main{ :role => 'main' }
+    .container_12
+      %header.grid_12
+        William Lawrence Camp
+      .grid_12
         = yield
-      %footer
+      %footer.grid_12
       
     -# 
       Javascript at the bottom for fast page loading
