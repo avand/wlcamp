@@ -90,3 +90,13 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+helpers do
+  def link_to_unless_current(text, path)
+    if path =~ /#{request.path}/
+      text
+    else
+      link_to text, path
+    end
+  end
+end
