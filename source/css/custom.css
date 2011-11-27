@@ -1,6 +1,49 @@
+html {
+  background: #00679d url(/images/knoll.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
-  font: 14px/1.7 Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+  font: 15px/1.5 Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+iframe {
+  border: none;
+  display: block;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 header {
-  background: green;
+  margin: 1.7em 0;
+}
+.shadow {
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.rounded {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.liner {
+  padding: 20px;
+  background: rgba(255, 255, 255, .9);
+  text-shadow: 0 1px 0 white;
+}
+.video {
+  padding: 2px;
+  background: black;
 }
