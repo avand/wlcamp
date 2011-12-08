@@ -1,6 +1,19 @@
 - content_for :subnavigation do
   = partial 'tour/subnavigation'
 
-.grid_12
+.grid_6
   .liner.shadow.rounded
-    Challenge Course
+    %h2 Challenge Course
+    
+    %p
+      Our Challenge Course boasts a climbing tower atop the knoll
+      with stunning views, a low ropes course to build team work skills,
+      as well as a top-notch high ropes course.
+      We built our whole challenge course ourselves so you won’t find
+      anyone who knows their course like we do ours!
+
+.grid_6
+  .slideshow
+    %img.rounded.shadow{ :src => "/images/tour/climbing-tower.jpg" }
+    %img.rounded.shadow{ :src => "/images/tour/challenge-course.jpg" }
+    %img.rounded.shadow{ :src => "/images/tour/helmets.jpg" }

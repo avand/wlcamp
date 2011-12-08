@@ -1,6 +1,17 @@
 - content_for :subnavigation do
   = partial 'tour/subnavigation'
 
-.grid_12
+.grid_6
   .liner.shadow.rounded
-    Waterfront
+    %h2 Waterfront
+
+    %p
+      Our Waterfront has a half-mile of frontage on quiet Lower Beech Pond.
+      We have a fleet of sailboats, canoes, kayaks and rowboats, a competition water-ski boat,
+      a top-quality swimming area, fishing equipment and a volleyball court for those taking a break from the water.
+
+.grid_6
+  .slideshow
+    %img.shadow.rounded{ :src => '/images/tour/skiboat.jpg', :width => 460 }
+    %img.shadow.rounded{ :src => '/images/tour/kayaking.jpg', :width => 460 }
+    %img.shadow.rounded{ :src => '/images/tour/sailing.jpg', :width => 460 }
