@@ -1,0 +1,75 @@
+html {
+  background-color: #3B73AC;
+  background-color: #999;
+}
+body {
+  font: 15px/1.5 Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+p, ul {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+p:last-child, ul:last-child {
+  margin-bottom: 0;
+}
+iframe {
+  border: none;
+  display: block;
+}
+.container_12 {
+  display: none;
+}
+header {
+  margin: 25px 0;
+}
+.shadow {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7);
+}
+.rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.image {
+  overflow: hidden;
+}
+.liner {
+  padding: 22px 20px;
+  text-shadow: 0 1px 0 white;
+  background: rgba(255, 255, 255, .9);
+}
+.video {
+  padding: 2px;
+  background: black;
+}
+header ul {
+  list-style: none;
+  padding-left: 0;
+}
+header ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header ul.subnavigation {
+  font-size: 12px;
+}
+header ul.subnavigation li {
+  min-width: 200px;
+}
+
+.slideshow {
+  min-height: 1px;
+}
