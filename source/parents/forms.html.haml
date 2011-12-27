@@ -1,0 +1,12 @@
+- content_for :subnavigation do
+  = partial 'parents/subnavigation'
+
+.grid_12
+  .liner.shadow.rounded
+    %h2 Forms
+
+    %ul
+      %li= link_to 'Camper Healthy History', '/downloads/forms/camper-health-history.pdf'
+      %li= link_to 'Camper Confidential', '/downloads/forms/camper-confidential.doc'
+      %li= link_to 'Parent Confidential', '/downloads/forms/parent-confidential.doc'
+      %li= link_to 'Packing Checklist', '/downloads/forms/packing-checklist.doc'
