@@ -32,6 +32,8 @@
     %script{ :src => "/js/modernizr.min.js" }
     %script{ :src => "/js/respond.min.js" }
     
+    - if env != 'production'
+      %script{ :src => "/js/960gridder.js" }
   %body
     .container_12
       %header.grid_12
