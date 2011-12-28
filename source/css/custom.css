@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 15px;
   line-height: 22px;
-  font-weight: normal;
 }
 p, ul {
   margin-top: 0;
@@ -84,9 +83,6 @@ header ul li {
 header ul li:hover {
   text-decoration: none;
 }
-header h1 {
-  font-weight: bold;
-}
 header h1,
 header ul.navigation {
   margin: 11px 0;
@@ -126,9 +122,16 @@ header nav ul a:hover {
 .subnavigation a:hover {
   text-decoration: none;
 }
+
 #main {
   margin-top: 44px;
   padding-top: 22px;
+}
+#main h2 {
+  color: #000C51;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 11px;
 }
 
 .slideshow {
