@@ -51,7 +51,7 @@
               %li.menu-item{ :'data-name' => 'tradition' } Tradition
               %li.menu-item{ :'data-name' => 'contact' } Contact
               %li.menu-item.last{ :'data-name' => 'news' } News
-    - ['tour', 'parents', 'alumni', 'tradition', 'news'].each do |section|
+    - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
       %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
     #main
       .container_12
