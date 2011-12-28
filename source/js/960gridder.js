@@ -4,7 +4,7 @@ var gOverride = {
   gOpacity: 0.35,
   gWidth: 10,
   pColor: '#C0C0C0',
-  pHeight: 20,
+  pHeight: 22,
   pOffset: 0,
   pOpacity: 0.55,
   center: true,

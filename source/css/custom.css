@@ -3,17 +3,17 @@ html {
   background-color: #999;
 }
 body {
-  font: 15px/1.5 Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+  font: 15px/22px Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 15px;
-  line-height: 1.5em;
+  line-height: 22px;
   font-weight: normal;
 }
 p, ul {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 22px;
 }
 p:last-child, ul:last-child {
   margin-bottom: 0;
@@ -26,7 +26,7 @@ iframe {
   display: none;
 }
 header {
-  margin: 25px 0;
+  margin: 22px 0;
 }
 .shadow {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -51,6 +51,10 @@ header {
   text-shadow: 0 1px 0 white;
   background: rgba(255, 255, 255, .9);
 }
+.rounded.liner {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
 .video {
   padding: 2px;
   background: black;
@@ -63,8 +67,12 @@ header ul li {
   display: inline-block;
   margin-right: 20px;
 }
+header ul.navigation {
+  margin: 11px 0;
+}
 header ul.subnavigation {
   font-size: 12px;
+  line-height: 22px;
 }
 header ul.subnavigation li {
   min-width: 200px;
