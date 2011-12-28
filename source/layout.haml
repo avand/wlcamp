@@ -16,6 +16,7 @@
     %title
     %meta{ :name => "description", :content => "" }/
     %meta{ :name => "author", :content => "" }/
+    %meta{ :name => "path", :content => request.path }
     
     -# Mobile viewport optimized: j.mp/bplateviewport
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
@@ -35,49 +36,29 @@
     - if env != 'production'
       %script{ :src => "/js/960gridder.js" }
   %body
-    .container_12
-      %header.grid_12
-        .rounded.shadow.liner
+    .centennial=# link_to_unless_current 'Celebrating 100 Years!', '/100-years.html'
+    %header
+      .container_12
+        .grid_4
           %h1 William Lawrence Camp
-          %ul.navigation
-            %li= link_to_unless_current 'Home', '/'
-            %li= link_to_unless_current 'Tour', '/tour/knoll.html'
-            %li= link_to_unless_current 'Campers', '#'
-            %li= link_to_unless_current 'Parents', '/parents/why-wlc.html'
-            %li= link_to_unless_current 'Alumni', '/alumni/wlc-vs-fdl.html'
-            %li= link_to_unless_current 'Tradition', '/tradition/history.html'
-            %li= link_to_unless_current 'Contact Us', '#'
-            %li= link_to_unless_current 'News', '#'
-            %li= link_to_unless_current 'Celebrating 100 Years!', '/100-years.html'
-          - if content_for? :subnavigation
-            = yield_content :subnavigation
-      #main
+        .grid_8
+          %nav
+            %ul
+              %li.menu-item{ :'data-name' => 'tour' } Tour
+              %li.menu-item{ :'data-name' => 'campers' } Campers
+              %li.menu-item{ :'data-name' => 'parents' } Parents
+              %li.menu-item{ :'data-name' => 'alumni' } Alumni
+              %li.menu-item{ :'data-name' => 'tradition' } Tradition
+              %li.menu-item{ :'data-name' => 'contact' } Contact
+              %li.menu-item.last{ :'data-name' => 'news' } News
+    - ['tour', 'parents', 'alumni', 'tradition', 'news'].each do |section|
+      %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
+    #main
+      .container_12
         = yield
-      %footer.grid_12
+        %footer.grid_12
       
-    -# 
-      Javascript at the bottom for fast page loading
-      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
-    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js" }
-    :javascript
-      window.jQuery || document.write("<script src='/js/libs/jquery-1.6.2.min.js'>\x3C/script>")
-    
-    %script{ :src => "/js/plugins.js?v=1" }
-    %script{ :src => "/js/script.js?v=1" }
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" }
     %script{ :src => '/js/libs/jquery.backstretch.min.js' }
     %script{ :src => '/js/libs/jquery.cycle.lite.js' }
-
-    :javascript
-      $.backstretch("/images/backgrounds/#{request.path.gsub('.html', '.jpg')}", { speed: 600, centeredX: false, centeredY: false });
-
-      $('.slideshow').cycle({ speed: 800, timeout: 6000 });
-
-      setTimeout("$('.container_12').fadeIn(1100);", 550);
-
-      $(document).ready(function() {
-        $('.navigation a, .subnavigation a').click(function() {
-          var href = $(this).attr('href');
-          $('.container_12').fadeOut(300, function() { window.location = href });
-          return false;
-        });
-      });
+    %script{ :src => '/js/custom.js' }
