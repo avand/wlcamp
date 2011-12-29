@@ -1,3 +1,7 @@
+%style
+  td { text-align: center }
+  \.tiny { font-size: 9px; line-height: 11px }
+
 .grid_12
   .liner.shadow.rounded
     %h2 Board of Trustees
@@ -10,18 +14,36 @@
       The Board of Trustees and Members of the Corporation have all had a close
       association with William Lawrence for many years: many were campers themselves,
       and still more are the parents of current and former campers and staff members.
-    %ul
-      %li
-        = link_to 'Charles Cleary', 'mailto:Charles_Cleary@wadleighlaw.com'
-        President<br />
-        Home: 603-225-9427 (please, no calls after 9:00 PM)<br />
-        Work: 603-669-4140
-      %li Rev. Gail Avery
-      %li Richard C. Brown, Immediate Past President Dennis J. Ceru, PhD
-      %li Robert Gallagher
-      %li Lucy N. Hancock
-      %li Neil F. Hulbert
-      %li Geoff McIntosh, Clerk
-      %li Gail W. Jessup
-      %li Frederick Kopff
-      %li Steven Weeks
+
+.grid_12
+  %img.rounded.shadow.space{ :src => '/images/parents/trustees.jpg' }
+
+.grid_12
+  .liner.shadow.rounded.space
+    %table{ style: 'width: 100%' }
+      %tr
+        %td
+          <a href="mailto:Charles_Cleary@wadleighlaw.com">Charles Cleary</a>
+          .tiny.sans-serif
+            %strong President<br />
+            Home: 603-225-9427<br />
+            Work: 603-669-4140<br />
+            Please, no calls after 9:00 PM
+        %td Rev. Gail Avery
+        %td 
+          Richard C. Brown
+          .tiny.sans-serif Immediate Past President
+        %td
+          Dennis J. Ceru
+          .tiny.sans-serif PhD
+        %td Robert Gallagher
+        %td Neil F. Hulbert
+      %tr
+        %td Lucy N. Hancock
+        %td
+          Geoff McIntosh
+          .tiny.sans-serif Clerk
+        %td Gail W. Jessup
+        %td Frederick Kopff
+        %td Steven Weeks
+        %td

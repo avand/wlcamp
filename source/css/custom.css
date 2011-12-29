@@ -21,6 +21,7 @@ iframe {
   border: none;
   display: block;
 }
+.sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
 .space { margin-top: 22px }
 .shadow {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,7 +135,6 @@ header nav ul a:hover {
 }
 
 footer {
-  font-family: 'Lucida Grande', verdana, sans-serif;
   font-size: 11px;
   margin-top: 154px;
   margin-bottom: 44px;
