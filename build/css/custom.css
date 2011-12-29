@@ -21,6 +21,7 @@ iframe {
   border: none;
   display: block;
 }
+.sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
 .space { margin-top: 22px }
 .shadow {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -109,6 +110,16 @@ header nav ul a:hover {
 }
 .centennial {
   position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.centennial a {
+  display: block;
+  background: url('/images/100-years.png');
+  height: 137px;
+  width: 137px;
+  text-indent: -9999px;
 }
 
 .subnavigation {
@@ -134,7 +145,6 @@ header nav ul a:hover {
 }
 
 footer {
-  font-family: 'Lucida Grande', verdana, sans-serif;
   font-size: 11px;
   margin-top: 154px;
   margin-bottom: 44px;
