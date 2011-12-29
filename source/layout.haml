@@ -36,7 +36,7 @@
     - if env != 'production'
       %script{ :src => "/js/960gridder.js" }
   %body
-    .centennial=# link_to_unless_current 'Celebrating 100 Years!', '/100-years.html'
+    .centennial= link_to 'Celebrating 100 Years!', '/100-years.html'
     %header
       .container_12
         .grid_4
