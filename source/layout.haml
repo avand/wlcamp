@@ -56,8 +56,25 @@
     #main
       .container_12
         = yield
-        %footer.grid_12
-      
+    %footer
+      .container_12
+        .grid_12
+          .rounded
+            .social
+              %span.facebook= link_to 'Find us on Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
+              &nbsp;&middot;&nbsp;
+              %span.aca= link_to 'Accredited by the American Camp Association', 'http://find.acacamps.org/cgi/details.cgi?id=6119', target: :blank
+              &nbsp;&middot;&nbsp;
+              %span.youtube= link_to 'Watch us on YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
+            %address{ style: 'display block' } 139 Federal Corner Rd, Ctr Tuftonboro, New Hampshire 03816
+            .avand
+              Website lovingly crafted by
+              = link_to 'Avand Amiri', 'http://avandamiri.com'
+              , Bill Larry Boy &amp; Brave
+            .copyright
+              &copy; William Lawrence Camp,
+              = Time.now.year
+
     %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" }
     %script{ :src => '/js/libs/jquery.backstretch.min.js' }
     %script{ :src => '/js/libs/jquery.cycle.lite.js' }
