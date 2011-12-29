@@ -43,7 +43,7 @@ iframe {
 .liner {
   padding: 22px 20px;
   text-shadow: 0 1px 0 white;
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .8);
 }
 .rounded.liner {
   padding-top: 21px;
