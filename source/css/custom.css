@@ -2,15 +2,19 @@ html {
   background-color: #3B73AC;
   background-color: #999;
 }
-body {
+body, .bitter {
   font: 15px/22px 'Bitter', Georgia, serif;
 }
+.bitter-italic {
+  font-family: 'Bitter I';
+}
+.sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 15px;
   line-height: 22px;
 }
-p, ul {
+p, ul, table {
   margin-top: 0;
   margin-bottom: 22px;
 }
@@ -21,7 +25,6 @@ iframe {
   border: none;
   display: block;
 }
-.sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
 .shadow {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);

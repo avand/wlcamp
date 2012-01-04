@@ -1,22 +1,28 @@
+%style
+  th.sans-serif { text-align: left; font-size: 11px; line-height: 18px; padding-top: 4px; color: #424242 }
+  th, td { padding: 0 }
+  \#tuition td,
+  \#tuition .center { text-align: center }
+
 .grid_12
   .liner.shadow.rounded
     %h2 Sessions and Tuitions for 2012
 
-    %table
+    %table{ :style => 'width: 600px' }
       %tr
         %td
-        %th Begins
-        %th Ends
+        %th.sans-serif Begins
+        %th.sans-serif Ends
       %tr
-        %th Seven-week Session
+        %th.sans-serif Seven-week Session
         %td Sunday, June 24th
         %td Sunday, August 12th
       %tr
-        %th Four-week Session I
+        %th.sans-serif Four-week Session I
         %td Sunday, June 24th
         %td Saturday, July 21st
       %tr
-        %th Three-week Session II
+        %th.sans-serif Three-week Session II
         %td Sunday, June 22nd
         %td Sunday, August 12th
 
@@ -37,45 +43,33 @@
 
     %p
       All two-week options are available for <em>first-time</em>
-      Junior and Middler campers currently in grades two through seven as space permits.
+      Junior and Middler campers currently in 2nd-7th grade as space permits.
 
-    %table
+    %table#tuition{ :style => 'width: 600px' }
       %tr
-        %th 7 week session
         %td
-          Tier A (full tuition)<br />
-          Tier B (partial subsidy)<br />
-          Tier C (scholarship)
-        %td
-          $4,900<br />
-          $4,700<br />
-          $4,500
+        %th.center.sans-serif 7 week session
+        %th.center.sans-serif 4 week session
+        %th.center.sans-serif 3 week session
+        %th.center.sans-serif 4 week session
       %tr
-        %th 4 week session
-        %td
-          Tier A (full tuition)<br />
-          Tier B (partial subsidy)
-        %td
-          $3,175<br />
-          $2,975
+        %th.sans-serif Tier A (full tuition)
+        %td $4,900
+        %td $3,175
+        %td $2,725
+        %td $1,975
       %tr
-        %th 3 week session
-        %td
-          Tier A (full tuition)<br />
-          Tier B (partial subsidy)<br />
-          Tier C (scholarship)
-        %td
-          $2,725<br />
-          $2,525<br />
-          $2,325
+        %th.sans-serif Tier B (full tuition)
+        %td $4,700
+        %td $2,975
+        %td $2,525
+        %td $1,775
       %tr
-        %th 4 week session
-        %td
-          Tier A (full tuition)<br />
-          Tier B (partial subsidy)
-        %td
-          $1,975<br />
-          $1,775
+        %th.sans-serif Tier C (full tuition)
+        %td $4,500
+        %td.na n/a
+        %td 2,325
+        %td.na n/a
 
     %p
       The above does not include a recommended $75 - $150 for personal activities
