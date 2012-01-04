@@ -5,15 +5,15 @@ $.backstretch("/images/backgrounds/" + $('meta[name=path]').attr('content').repl
 $('.slideshow').cycle({ speed: 800, timeout: 6000 });
 
 function slideUpAndFadeOut(element) {
-  element.slideUp(250);
+  element.slideUp(150);
 };
 
 function slideDownAndFadeIn(element) {
   element.css('opacity', 0)
-    .slideDown(700)
+    .slideDown(500)
     .animate(
       { opacity: 1 },
-      { queue: false, duration: '700' }
+      { queue: false, duration: 500 }
     );
 }
 
