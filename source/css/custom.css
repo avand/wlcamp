@@ -22,7 +22,6 @@ iframe {
   display: block;
 }
 .sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
-.space { margin-top: 22px }
 .shadow {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
@@ -45,6 +44,7 @@ iframe {
   padding: 22px 20px;
   text-shadow: 0 1px 0 white;
   background: rgba(255, 255, 255, .8);
+  margin-bottom: 22px;
 }
 .rounded.liner {
   padding-top: 21px;
@@ -53,6 +53,7 @@ iframe {
 .video {
   padding: 2px;
   background: black;
+  margin-bottom: 22px;
 }
 header,
 .subnavigation {
@@ -154,8 +155,6 @@ header nav ul a:hover {
 
 footer {
   font-size: 11px;
-  margin-top: 154px;
-  margin-bottom: 44px;
   text-align: center;
   color: #D0D0D0;
   text-shadow: 0 1px 0 black;
@@ -173,18 +172,21 @@ footer a:hover {
 footer address {
   font-style: normal;
 }
-footer .rounded {
+footer {
+  position: relative;
   padding-top: 11px;
   padding-bottom: 11px;
+  margin-top: -111px; /* negative value of footer height */
+  height: 88px;
   background: rgba(0, 0, 0, .35);
-  border: 1px solid rgba(0, 0, 0, .35);
-  border-color: rgba(0, 0, 0, .4) rgba(0, 0, 0, .1) rgba(255, 255, 255, .2) rgba(0, 0, 0, .1);
+  border-top: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, .4);
+  clear: both;
 }
 
 
 #main {
-  margin-top: 44px;
-  padding-top: 22px;
+  padding-top: 66px;
 }
 #main h2 {
   color: #000C51;
@@ -204,4 +206,26 @@ footer .rounded {
 .last {
   margin-right: 0 !important;
   padding-right: 0 !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom: 111px; /* must be same height as the footer */
+} 
+
+/*Opera Fix*/
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;/
 }

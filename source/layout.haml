@@ -34,48 +34,52 @@
     -# Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
     %script{ :src => "/js/modernizr.min.js" }
     %script{ :src => "/js/respond.min.js" }
-    
+
+    <!--[if !IE 7]>
+    %style{ :type => 'text/css' }
+      \#wrap { display:table; height:100% }
+    <![endif]-->
+
     - if env != 'production'
       %script{ :src => "/js/960gridder.js" }
   %body
     .centennial= link_to 'Celebrating 100 Years!', '/100-years.html'
-    %header
-      .container_12
-        .grid_3
-          %h1= link_to 'William Lawrence Camp', '/'
-        .grid_9
-          %nav
-            %ul
-              %li.menu-item.last{ :'data-name' => 'contact' } Contact
-              %li.menu-item{ :'data-name' => 'news' } News
-              %li.menu-item{ :'data-name' => 'tradition' } Tradition
-              %li.menu-item{ :'data-name' => 'alumni' } Alumni
-              %li.menu-item{ :'data-name' => 'parents' } Parents
-              %li.menu-item{ :'data-name' => 'campers' } Campers
-              %li.menu-item.first{ :'data-name' => 'tour' } Tour
-    - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
-      %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
-    #main
-      .container_12
-        = yield
+    #wrap
+      %header
+        .container_12
+          .grid_3
+            %h1= link_to 'William Lawrence Camp', '/'
+          .grid_9
+            %nav
+              %ul
+                %li.menu-item.last{ :'data-name' => 'contact' } Contact
+                %li.menu-item{ :'data-name' => 'news' } News
+                %li.menu-item{ :'data-name' => 'tradition' } Tradition
+                %li.menu-item{ :'data-name' => 'alumni' } Alumni
+                %li.menu-item{ :'data-name' => 'parents' } Parents
+                %li.menu-item{ :'data-name' => 'campers' } Campers
+                %li.menu-item.first{ :'data-name' => 'tour' } Tour
+      - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
+        %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
+      #main
+        .container_12
+          = yield
     %footer
       .container_12
-        .grid_12
-          .rounded.sans-serif
-            .social
-              %span.facebook= link_to 'Find us on Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span.aca= link_to 'Accredited by the American Camp Association', 'http://find.acacamps.org/cgi/details.cgi?id=6119', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span.youtube= link_to 'Watch us on YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
-            %address{ style: 'display block' } 139 Federal Corner Rd, Ctr Tuftonboro, New Hampshire 03816
-            .avand
-              Website lovingly crafted by
-              = link_to 'Avand Amiri', 'http://avandamiri.com'
-              , Bill Larry Boy &amp; Brave
-            .copyright
-              &copy; William Lawrence Camp,
-              = Time.now.year
+        .grid_12.sans-serif
+          .social
+            %span.facebook= link_to 'Find us on Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
+            &nbsp;&middot;&nbsp;
+            %span.aca= link_to 'Accredited by the American Camp Association', 'http://find.acacamps.org/cgi/details.cgi?id=6119', target: :blank
+            &nbsp;&middot;&nbsp;
+            %span.youtube= link_to 'Watch us on YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
+          %address{ style: 'display block' } 139 Federal Corner Rd, Ctr Tuftonboro, New Hampshire 03816
+          .avand
+            Website lovingly crafted by
+            == #{link_to 'Avand Amiri', 'http://avandamiri.com'}, Bill Larry Boy &amp; Brave
+          .copyright
+            &copy; William Lawrence Camp,
+            = Time.now.year
 
     %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" }
     %script{ :src => '/js/libs/jquery.backstretch.min.js' }
