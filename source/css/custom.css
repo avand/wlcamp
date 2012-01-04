@@ -71,6 +71,7 @@ header {
   background: linear-gradient(top, #16218C, #000075);
   text-shadow: 0 -1px 0 black;
   top: 0;
+  z-index: 998;
 }
 header h1 a,
 header h1 a:link,
