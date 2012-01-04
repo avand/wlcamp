@@ -3,7 +3,7 @@ html {
   background-color: #999;
 }
 body {
-  font: 15px/22px Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+  font: 15px/22px 'Bitter', Georgia, serif;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -72,6 +72,11 @@ header {
   text-shadow: 0 -1px 0 black;
   top: 0;
   z-index: 998;
+  height: 44px;
+  overflow: hidden;
+}
+header h1 {
+  font-size: 18px;
 }
 header h1 a,
 header h1 a:link,
@@ -87,17 +92,17 @@ header ul {
   padding-left: 0;
 }
 header ul li {
-  float: left;
-  padding: 11px 16px;
-  text-decoration: underline;
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
 }
 header ul li:hover {
   text-decoration: none;
 }
 header h1,
-header ul.navigation {
-  margin: 11px 0;
+header nav ul li {
+  line-height: 44px;
 }
 header h1,
 header nav {
@@ -133,16 +138,18 @@ header nav ul a:hover {
   padding: 11px 0;
   z-index: 999;
   top: 44px;
+  color: #BBB;
 }
 .subnavigation a,
 .subnavigation a:link {
   color: #000075;
+  text-decoration: none;
 }
 .subnavigation a:visited {
   color: #16218C;
 }
 .subnavigation a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 footer {
@@ -188,4 +195,13 @@ footer .rounded {
 
 .slideshow {
   min-height: 1px;
+}
+
+.first {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+.last {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }

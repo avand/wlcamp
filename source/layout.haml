@@ -27,6 +27,8 @@
     %link{ :href => "/css/reset.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/css/grid.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/css/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
+
+    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700', :rel => 'stylesheet', :type => 'text/css' }/
     
     -# All JavaScript at the bottom, except for Modernizr and Respond.
     -# Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
@@ -39,18 +41,18 @@
     .centennial= link_to 'Celebrating 100 Years!', '/100-years.html'
     %header
       .container_12
-        .grid_4
+        .grid_3
           %h1= link_to 'William Lawrence Camp', '/'
-        .grid_8
+        .grid_9
           %nav
             %ul
-              %li.menu-item{ :'data-name' => 'tour' } Tour
-              %li.menu-item{ :'data-name' => 'campers' } Campers
-              %li.menu-item{ :'data-name' => 'parents' } Parents
-              %li.menu-item{ :'data-name' => 'alumni' } Alumni
+              %li.menu-item.last{ :'data-name' => 'contact' } Contact
+              %li.menu-item{ :'data-name' => 'news' } News
               %li.menu-item{ :'data-name' => 'tradition' } Tradition
-              %li.menu-item{ :'data-name' => 'contact' } Contact
-              %li.menu-item.last{ :'data-name' => 'news' } News
+              %li.menu-item{ :'data-name' => 'alumni' } Alumni
+              %li.menu-item{ :'data-name' => 'parents' } Parents
+              %li.menu-item{ :'data-name' => 'campers' } Campers
+              %li.menu-item.first{ :'data-name' => 'tour' } Tour
     - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
       %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
     #main
