@@ -11,20 +11,17 @@
     <title></title>
     <meta content='' name='description' />
     <meta content='' name='author' />
-    <meta content='tradition/songs.html' name='path' />
-    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
-    <link href='/css/reset.css?v=1' media='all' rel='stylesheet' />
-    <link href='/css/grid.css?v=1' media='all' rel='stylesheet' />
-    <link href='/css/custom.css?v=1' media='all' rel='stylesheet' />
+    <meta content='/images/backgrounds/tradition/songs.jpg' name='background' />
+    <link href='/stylesheets/reset.css?v=1' media='all' rel='stylesheet' />
+    <link href='/stylesheets/grid.css?v=1' media='all' rel='stylesheet' />
+    <link href='/stylesheets/custom.css?v=1' media='all' rel='stylesheet' />
     <link href='http://fonts.googleapis.com/css?family=Bitter:400italic,400,700' rel='stylesheet' type='text/css' />
-    <script src='/js/modernizr.min.js'></script>
-    <script src='/js/respond.min.js'></script>
+    <script src='/javascripts/libs/modernizr-2.0.6.min.js'></script>
     <!--[if !IE 7]>
     <style type='text/css'>
       #wrap { display:table; height:100% }
     </style>
     <![endif]-->
-    <script src='/js/960gridder.js'></script>
   </head>
   <body>
     <div class='centennial'><a href="/100-years.html">Celebrating 100 Years!</a></div>
@@ -43,7 +40,7 @@
                 <li class='menu-item' data-name='alumni'>Alumni</li>
                 <li class='menu-item' data-name='parents'>Parents</li>
                 <li class='menu-item' data-name='campers'>Campers</li>
-                <li class='menu-item first' data-name='tour'>Tour</li>
+                <li class='menu-item' data-name='tour'>Tour</li>
               </ul>
             </nav>
           </div>
@@ -1569,8 +1566,15 @@
       </div>
     </footer>
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-    <script src='/js/libs/jquery.backstretch.min.js'></script>
-    <script src='/js/libs/jquery.cycle.lite.js'></script>
-    <script src='/js/custom.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        window.jQuery || document.write("<script src='/javascripts/libs/jquery-1.6.2.min.js'>\x3C/script>")
+      //]]>
+    </script>
+    <script src='/javascripts/libs/jquery.backstretch.min.js'></script>
+    <script src='/javascripts/libs/jquery.cycle.lite.js'></script>
+    <script src='/javascripts/libs/jquery.easing.js'></script>
+    <script src='/javascripts/custom.js'></script>
+    <script src='/javascripts/960gridder.js'></script>
   </body>
 </html>
