@@ -97,8 +97,8 @@ header ul {
 }
 header ul li {
   float: right;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   cursor: pointer;
 }
 header ul li:hover {
@@ -122,7 +122,7 @@ header nav ul a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1001;
 }
 .centennial a {
   display: block;
@@ -139,10 +139,12 @@ header nav ul a:hover {
   background: -o-linear-gradient(top, #ffffff, #f5f5f3);
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f3));
   background: linear-gradient(top, #ffffff, #f5f5f3);
-  padding: 11px 0;
   z-index: 999;
   top: 44px;
   color: #BBB;
+}
+.subnavigation .container_12 {
+  padding: 11px 0;
 }
 .subnavigation a,
 .subnavigation a:link {
@@ -232,3 +234,42 @@ body:before {
   width: 0;
   margin-top: -32767px;/
 }
+
+
+/*ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    color: #191919;
+    float: left;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+p {
+    padding: 0 5px;
+}
+.subtext {
+    padding-top: 15px;
+}
+.green {
+    background: url("images/green-item-bg.jpg") no-repeat scroll left top #6AA63B;
+}
+.yellow {
+    background: url("images/yellow-item-bg.jpg") no-repeat scroll left top #FBC700;
+}
+.red {
+    background: url("images/red-item-bg.jpg") no-repeat scroll left top #D52100;
+}
+.purple {
+    background: url("images/purple-item-bg.jpg") no-repeat scroll left top #5122B4;
+}
+.blue {
+    background: url("images/blue-item-bg.jpg") no-repeat scroll left top #0292C0;
+}*/

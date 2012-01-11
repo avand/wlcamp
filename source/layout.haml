@@ -53,7 +53,7 @@
                 %li.menu-item{ :'data-name' => 'alumni' } Alumni
                 %li.menu-item{ :'data-name' => 'parents' } Parents
                 %li.menu-item{ :'data-name' => 'campers' } Campers
-                %li.menu-item.first{ :'data-name' => 'tour' } Tour
+                %li.menu-item{ :'data-name' => 'tour' } Tour
       - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
         %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
       #main
@@ -82,6 +82,7 @@
       window.jQuery || document.write("<script src='/javascripts/libs/jquery-1.6.2.min.js'>\x3C/script>")
     %script{ :src => '/javascripts/libs/jquery.backstretch.min.js' }
     %script{ :src => '/javascripts/libs/jquery.cycle.lite.js' }
+    %script{ :src => '/javascripts/libs/jquery.easing.js' }
     %script{ :src => '/javascripts/custom.js' }
     - if env != 'production'
       %script{ :src => "/javascripts/960gridder.js" }

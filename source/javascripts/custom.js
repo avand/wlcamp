@@ -4,19 +4,6 @@ $.backstretch($('meta[name=background]').attr('content'), {
 
 $('.slideshow').cycle({ speed: 800, timeout: 6000 });
 
-function slideUpAndFadeOut(element) {
-  element.slideUp(150);
-};
-
-function slideDownAndFadeIn(element) {
-  element.css('opacity', 0)
-    .slideDown(500)
-    .animate(
-      { opacity: 1 },
-      { queue: false, duration: 500 }
-    );
-}
-
 $(document).ready(function(e) {
   header        = $('header');
   main          = $('#main');
@@ -39,14 +26,73 @@ $(document).ready(function(e) {
 
     return false;
   });
+});
 
-  $('.menu-item').mouseenter(function(e) {
-    var menuName = $(this).data('name');
-    slideDownAndFadeIn($("#" + menuName + ":hidden"));
-    slideUpAndFadeOut($('.subnavigation[id!="' + menuName + '"]'));
+function slideDownSubnavigation(element) {
+  element.stop().css('z-index', '1000').show().animate({
+    height: element.data('height')
+  }, {
+    queue: false,
+    duration: 1000,
+    easing: 'easeOutBounce'
+  })
+};
+
+function slideUpSubnavigation(element) {
+  element.stop().css('z-index', '999').animate({
+    height: 0
+  }, {
+    queue: false,
+    duration: 1000,
+    easing: 'easeOutSine',
+    complete: function() {
+      $(this).hide();
+    }
+  })
+}
+
+function adjustMenuPadding(current, currentPadding, prevPaddingRight, nextPaddingLeft) {
+  var previous = current.next('.menu-item');
+  var next     = current.prev('.menu-item');
+
+  if (previous.size() > 0) {
+    current.css('padding-left', currentPadding);
+    previous.css('padding-right', prevPaddingRight);
+  }
+
+  if (next.size() > 0) {
+    current.css('padding-right', currentPadding);
+    next.css('padding-left', nextPaddingLeft);
+  }
+}
+
+function increaseMenuItemPadding(element) {
+  adjustMenuPadding(element, '50px', '0', '0')
+};
+
+function decreaseMenuItemPadding(element) {
+  adjustMenuPadding(element, '25px', '25px', '25px')
+};
+
+$(document).ready(function(){
+  $('.subnavigation').each(function() {
+    $(this).data('height', $(this).height());
+    $(this).css('height', 0);
   });
 
-  $('#main').mouseover(function(e) {
-    slideUpAndFadeOut($('.subnavigation:visible'));
+  $('.menu-item').mouseover(function() {
+    increaseMenuItemPadding($(this));
+    slideDownSubnavigation($('#' + $(this).data('name')));
+  }).mouseout(function() {
+    decreaseMenuItemPadding($(this));
+    slideUpSubnavigation($('#' + $(this).data('name')));
+  })
+
+  $('.subnavigation').mouseover(function() {
+    increaseMenuItemPadding($('.menu-item[data-name="' + $(this).attr('id') + '"]'));
+    slideDownSubnavigation($(this));
+  }).mouseout(function() {
+    decreaseMenuItemPadding($('.menu-item[data-name="' + $(this).attr('id') + '"]'));
+    slideUpSubnavigation($(this));
   })
 });
