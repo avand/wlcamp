@@ -15,7 +15,9 @@
     %title
     %meta{ :name => "description", :content => "" }/
     %meta{ :name => "author", :content => "" }/
-    %meta{ :name => "path", :content => request.path }
+
+    - background = request.path.gsub('.html', '.jpg')
+    %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
 
     -# Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
 

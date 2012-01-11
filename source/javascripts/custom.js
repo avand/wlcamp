@@ -1,4 +1,4 @@
-$.backstretch("/images/backgrounds/" + $('meta[name=path]').attr('content').replace('.html', '.jpg'), {
+$.backstretch($('meta[name=background]').attr('content'), {
   speed: 600, centeredX: false, centeredY: false
 });
 
