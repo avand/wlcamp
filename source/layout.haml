@@ -37,13 +37,14 @@
     <![endif]-->
 
   %body
-    .centennial= link_to 'Celebrating 100 Years!', '/100-years.html'
 
     #wrap
       %header
         .container_12
           .grid_3
             %h1= link_to 'William Lawrence Camp', '/'
+            #centennial
+              .banner.sans-serif= link_to 'Celebrating 100 Years!', '/100-years.html'
           .grid_9
             %nav
               %ul

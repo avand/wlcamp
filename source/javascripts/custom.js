@@ -29,12 +29,17 @@ $(document).ready(function(e) {
 });
 
 function slideDownSubnavigation(element) {
+  $("#centennial").stop().animate({ opacity: 0.0 }, { queue: false });
+
   element.stop().css('z-index', '1000').show().animate({
     height: element.data('height')
   }, {
     queue: false,
     duration: 1000,
-    easing: 'easeOutBounce'
+    easing: 'easeOutBounce',
+    complete: function() {
+      $("#centennial").stop().animate({ opacity: 0.0 }, { queue: false });
+    }
   })
 };
 
@@ -47,8 +52,10 @@ function slideUpSubnavigation(element) {
     easing: 'easeOutSine',
     complete: function() {
       $(this).hide();
+      $("#centennial").animate({ opacity: 1.0 }, { queue: false });
     }
   })
+
 }
 
 function adjustMenuPadding(current, currentPadding, prevPaddingRight, nextPaddingLeft) {
