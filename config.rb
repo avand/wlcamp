@@ -99,4 +99,8 @@ helpers do
       link_to text, path
     end
   end
+
+  def link_to(name, path, options = {})
+    super name, (env == 'production' ? path.gsub('.html') : path), options
+  end
 end
