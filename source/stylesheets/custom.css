@@ -237,7 +237,18 @@ html, body {
 #main {
   overflow:auto;
   padding-bottom: 111px; /* must be same height as the footer */
-} 
+}
+#main a,
+#main a:link {
+  color: #022DBF;
+  text-decoration: none;
+}
+#main a:hover {
+  text-decoration: underline;
+}
+#main a:visited {
+  color: #650096;
+}
 
 /*Opera Fix*/
 body:before {
