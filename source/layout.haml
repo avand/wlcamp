@@ -86,5 +86,6 @@
     %script{ :src => '/javascripts/libs/jquery.cycle.lite.js' }
     %script{ :src => '/javascripts/libs/jquery.easing.js' }
     %script{ :src => '/javascripts/custom.js' }
+    = yield_content :scripts
     - if env != 'production'
       %script{ :src => "/javascripts/960gridder.js" }

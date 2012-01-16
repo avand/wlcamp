@@ -248,41 +248,37 @@ body:before {
   margin-top: -32767px;/
 }
 
+ul.do-something {
+  list-style: none;
+  padding-left: 0;
+  height: 286px;
+}
+ul.do-something li {
+  height: 22px;
+  float: left;
+  width: 50%;
+}
+.do-something .play {
+  background: url("/images/home/play.png");
+  height: 330px;
+  width: 460px;
+  position: absolute;
+  z-index: 500;
+  cursor: pointer;
+}
+.do-something .slideshow {
+  height: 330px;
+}
+.do-something .video {
+  display: none;
+  margin: 0;
+}
 
-/*ul {
-    margin: 0;
-    padding: 0;
+.countdown {
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  text-shadow: 0 1px 0 black;
+  height: 44px;
+  line-height: 44px;
 }
-li {
-    color: #191919;
-    float: left;
-    height: 50px;
-    overflow: hidden;
-    text-align: center;
-    width: 100px;
-}
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-p {
-    padding: 0 5px;
-}
-.subtext {
-    padding-top: 15px;
-}
-.green {
-    background: url("images/green-item-bg.jpg") no-repeat scroll left top #6AA63B;
-}
-.yellow {
-    background: url("images/yellow-item-bg.jpg") no-repeat scroll left top #FBC700;
-}
-.red {
-    background: url("images/red-item-bg.jpg") no-repeat scroll left top #D52100;
-}
-.purple {
-    background: url("images/purple-item-bg.jpg") no-repeat scroll left top #5122B4;
-}
-.blue {
-    background: url("images/blue-item-bg.jpg") no-repeat scroll left top #0292C0;
-}*/

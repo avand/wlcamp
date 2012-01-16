@@ -2,8 +2,6 @@ $.backstretch($('meta[name=background]').attr('content'), {
   speed: 600, centeredX: false, centeredY: false
 });
 
-$('.slideshow').cycle({ speed: 800, timeout: 6000 });
-
 $(document).ready(function(e) {
   header        = $('header');
   main          = $('#main');
