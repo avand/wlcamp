@@ -1,9 +1,47 @@
 .grid_12
   .liner.shadow.rounded
-    %h2 Forms
+    %h2 Bob Ditter
+
+    %p
+      Bob Ditter is a child and family therapist from Boston, MA who works extensively
+      with people who work with children. He visits summer camps throughout the United States
+      helping them be the best place possible for children. We post these four articles by Bob,
+      with his permission, for your consideration:
 
     %ul
+      %li= link_to 'A Special Note Regarding Personal Information About Your Child', '/downloads/forms/bob-ditter/special-issues.pdf'
+      %li= link_to 'Early Summer Letter to Parents: Camp - Fun, Friendship and Taking Time To Grow', '/downloads/forms/bob-ditter/early-summer-letter-to-parents.pdf'
+      %li= link_to 'Talking with Your Children About Sensitive Issues', '/downloads/forms/bob-ditter/sensitive-issues.pdf'
+      %li= link_to 'The Other Duffel Bag - Talking with Your Child about their First Time at Camp', '/downloads/forms/bob-ditter/the-other-duffle-bag.pdf'
+
+    %p
+      = mail_to 'BobDitter1@aol.com', 'Email Bob Ditter'
+
+  .liner.shadow.rounded
+    %h2 Camp Forms
+
+    %p
+      <em>All</em> forms below must be completed and received by us <em>prior</em> to your son attending Camp.
+      The Camper Health History form is especially important.
+
+    %ul
+      %li= link_to 'Camper Behavior & Responsibilities', '/downloads/forms/camper-behavior-and-responsibilites.pdf'
+      %li= link_to 'Camper Confidential', '/downloads/forms/camper-confidential.pdf'
+      %li= link_to 'Camper Enrollment Application', '/downloads/forms/camper-enrollment-application.pdf'
       %li= link_to 'Camper Healthy History', '/downloads/forms/camper-health-history.pdf'
-      %li= link_to 'Camper Confidential', '/downloads/forms/camper-confidential.doc'
-      %li= link_to 'Parent Confidential', '/downloads/forms/parent-confidential.doc'
-      %li= link_to 'Packing Checklist', '/downloads/forms/packing-checklist.doc'
+      %li= link_to 'Camper Healthy Insurance', '/downloads/forms/camper-health-insurance.pdf'
+      %li
+        = link_to 'Epi-pen & Inhaler Authorization', '/downloads/forms/epi-pen-and-inhaler-authorization.pdf'
+        (if needed)
+      %li= link_to 'Letter to Parents from Nathanial S. Crane, Director', '/downloads/forms/letter-from-director.pdf'
+      %li= link_to 'Parent Checklist', '/downloads/forms/parent-checklist.pdf'
+      %li= link_to 'Parent Checklist', '/downloads/forms/parent-checklist.pdf'
+      %li= link_to 'Parent Confidential', '/downloads/forms/parent-confidential.pdf'
+      %li= link_to 'Parent Guide', '/downloads/forms/parent-guide.pdf'
+      %li= link_to 'Store Catalogue', '/downloads/forms/store-catalogue.pdf'
+      %li= link_to 'Things You Need to Know', '/downloads/forms/things-you-need-to-know.pdf'
+      %li= link_to 'What to Bring', '/downloads/forms/what-to-bring.pdf'
+
+    %p
+      Do you have any questions? Not a problem, give our friendly staff a call at our the camp office.
+      We are happy to walk you through the process. Just call 603-569-3698.
