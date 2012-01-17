@@ -84,13 +84,13 @@ header {
 header h1 {
   font-size: 18px;
 }
-header h1 a,
-header h1 a:link,
-header h1 a:visited {
+header a,
+header a:link,
+header a:visited {
   color: white;
   text-decoration: none;
 }
-header h1 a:hover {
+header a:hover {
   text-decoration: underline;
 }
 header ul {
@@ -107,18 +107,15 @@ header ul li:hover {
   text-decoration: none;
 }
 header h1,
-header nav ul li {
+header ul li {
   line-height: 44px;
 }
 header h1,
-header nav {
+header ul {
   color: #F8F8F8;
 }
-header nav ul a {
+header ul a {
   display: block;
-}
-header nav ul a:hover {
-  text-decoration: none;
 }
 header .grid_3 {
   position: relative;

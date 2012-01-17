@@ -46,15 +46,14 @@
             #centennial
               .banner.sans-serif= link_to 'Celebrating 100 Years!', '/100-years.html'
           .grid_9
-            %nav
-              %ul
-                %li.menu-item.last{ :'data-name' => 'contact' } Contact
-                %li.menu-item{ :'data-name' => 'news' } News
-                %li.menu-item{ :'data-name' => 'tradition' } Tradition
-                %li.menu-item{ :'data-name' => 'alumni' } Alumni
-                %li.menu-item{ :'data-name' => 'parents' } Parents
-                %li.menu-item{ :'data-name' => 'campers' } Campers
-                %li.menu-item{ :'data-name' => 'tour' } Tour
+            %ul
+              %li.menu-item.last{ :'data-name' => 'contact' }= link_to 'Contact', '/contact.html'
+              %li.menu-item{ :'data-name' => 'news' } News
+              %li.menu-item{ :'data-name' => 'tradition' } Tradition
+              %li.menu-item{ :'data-name' => 'alumni' } Alumni
+              %li.menu-item{ :'data-name' => 'parents' } Parents
+              %li.menu-item{ :'data-name' => 'campers' } Campers
+              %li.menu-item{ :'data-name' => 'tour' } Tour
       - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
         %nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
       #main
