@@ -2,30 +2,6 @@ $.backstretch($('meta[name=background]').attr('content'), {
   speed: 600, centeredX: false, centeredY: false
 });
 
-$(document).ready(function(e) {
-  header        = $('header');
-  main          = $('#main');
-  subnavigation = $('#subnavigation');
-
-  $('.navigation a, .subnavigation a').click(function() {
-    var href     = $(this).attr('href');
-    var duration = 300;
-
-    $('header, .subnavigation').animate({ opacity: 0 }, {
-      duration: duration,
-      queue: false
-    });
-
-    $('#main').animate({ opacity: 0 }, {
-      duration: duration,
-      queue: false,
-      complete: function() { window.location = href }
-    });
-
-    return false;
-  });
-});
-
 function slideDownSubnavigation(element) {
   $("#centennial").stop().animate({ opacity: 0.0 }, { queue: false });
 
