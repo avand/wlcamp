@@ -29,10 +29,25 @@
       help make camp an even better place to spend the summer!
 
     %ul
-      %li= link_to 'Make an Online Donation via Paypal', '#'
-      %li= link_to 'Download Giving Form', '#'
-      %li= link_to '20XX-20XX Annual Fund Letter', '#'
-      %li= link_to '501(c)(3) Charitable Corporation Determination Letter', '#'
+      %li= link_to 'Charitable Giving Form', '/downloads/charitable-giving/charitable-giving-form.pdf'
+      %li= link_to 'Annual Fund Letter', '/downloads/charitable-giving/annual-fund-letter.pdf'
+      %li= link_to '501(c)3 Determination Letter', '/downloads/charitable-giving/501c3-determination-letter.pdf'
 
     %p
       A copy of the camps most recent IRS form 990 is available upon written request.
+
+.grid_12
+  .liner.shadow.rounded
+    :javascript
+      var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");
+      document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+
+    :javascript
+      var m7x3p9 = new WufooForm();
+      m7x3p9.initialize({
+      'userName':'wlcamp', 
+      'formHash':'m7x3p9', 
+      'autoResize':true,
+      'height':'824',
+      'header':'show'});
+      m7x3p9.display();
