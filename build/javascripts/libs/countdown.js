@@ -17,7 +17,7 @@ function calcage(secs, num1, num2) {
     s = "0" + s;
   }
 
-  return "<b>" + s + "</b>";
+  return s;
 }
 
 function CountBack(secs) {
