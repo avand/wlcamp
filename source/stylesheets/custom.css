@@ -43,8 +43,9 @@ iframe {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-.image {
+img {
   overflow: hidden;
+  margin-bottom: 22px;
 }
 .liner {
   padding: 22px 20px;
