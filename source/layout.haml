@@ -26,7 +26,7 @@
     %link{ :href => "/stylesheets/grid.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
 
-    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700', :rel => 'stylesheet', :type => 'text/css' }/
+    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
 
     -# Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
     %script{ :src => "/javascripts/libs/modernizr-2.0.6.min.js" }
@@ -70,10 +70,12 @@
             %span.aca= link_to 'Accredited by the American Camp Association', 'http://find.acacamps.org/cgi/details.cgi?id=6119', target: :blank
             &nbsp;&middot;&nbsp;
             %span.youtube= link_to 'Watch us on YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
-          %address{ style: 'display block' } 139 Federal Corner Rd, Ctr Tuftonboro, New Hampshire 03816
+          .countdown
+            = javascript_include_tag '/javascripts/libs/countdown'
           .avand
             Website lovingly crafted by
             == #{link_to 'Avand Amiri', 'http://avandamiri.com'}, Bill Larry Boy &amp; Brave
+          %address{ style: 'display block' } 139 Federal Corner Rd, Ctr Tuftonboro, NH 03816
           .copyright
             &copy; William Lawrence Camp,
             = Time.now.year

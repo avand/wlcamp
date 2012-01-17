@@ -1,42 +1,40 @@
 .grid_6
-  .liner.shadow.rounded
-    %h2 Do Something this Summer!
-
-    %ul.do-something
-      %li.climb-a-wall== &raquo; #{link_to 'Climb a Wall', '/tour/challenge-course.html'}
-      %li.hike-a-mountain== &raquo; #{link_to 'Hike a Mountain', '/tour/wilderness-trips.html'}
-      %li.canoe-a-river== &raquo; #{link_to 'Canoe a River', '/tour/wilderness-trips.html'}
-      %li.work-with-wood== &raquo; #{link_to 'Work with Wood', '/tour/craft-areas.html'}
-      %li.sing-a-song== &raquo; #{link_to 'Sing a Song', '/tradition/songs.html'}
-      %li.yell-a-chant== &raquo; #{link_to 'Yell a Chant', '/tour/dining-hall.html'}
-      %li.play-a-game== &raquo; #{link_to 'Play a Game', '/tour/farmhouse.html'}
-      %li.run-a-race== &raquo; #{link_to 'Run a Race', '/campers/special-programs.html'}
-      %li.build-a-fire== &raquo; #{link_to 'Build a Fire', '/tradition/braves.html'}
-      %li.swing-a-bat== &raquo; #{link_to 'Swing a Bat', '/tour/sports.html'}
-      %li.kick-a-ball== &raquo; #{link_to 'Kick a Ball', '/tour/sports.html'}
-      %li.shoot-some-hoops== &raquo; #{link_to 'Shoot Some Hoops', '/tour/sports.html'}
-      %li.fire-at-a-target== &raquo; #{link_to 'Fire at a Target', '/tour/riflery-skeet.html'}
-      %li.jump-in-a-lake== &raquo; #{link_to 'Jump in a Lake', '/tour/waterfront.html'}
-      %li.waterski== &raquo; #{link_to 'Waterski', '/tour/waterfront.html'}
-      %li.sail-a-boat== &raquo; #{link_to 'Sail a Boat', '/tour/waterfront.html'}
-      %li.conquer-your-fear== &raquo; #{link_to 'Conquer Your Fear', '/tour/challenge-course.html'}
-      %li.make-a-friend== &raquo; #{link_to 'Make a Friend', '/tour/cabins.html'}
-      %li.defeat-an-obstacle== &raquo; #{link_to 'Defeat an Obstacle', '/tour/challenge-course.html'}
-      %li.solve-a-problem== &raquo; #{link_to 'Solve a Problem', '/tour/challenge-course.html'}
-      %li.earn-an-award== &raquo; #{link_to 'Earn a Award', '/campers/special-programs.html'}
-      %li.have-some-fun== &raquo; #{link_to 'Have Some Fun', '/campers/special-programs.html'}
-      %li.join-a-team== &raquo; #{link_to 'Join a Team', '/campers/special-programs.html'}
-      %li.build-something== &raquo; #{link_to 'Build Something', '/tour/craft-areas.html'}
-      %li.discover-something== &raquo; #{link_to 'Discover Something', '/tour/outdoorsman-skills.html'}
-      %li.win-something== &raquo; #{link_to 'Win Something', '/campers/special-programs.html'}
+  .tagline.permanent-marker Do Something this Summer!
 
 .grid_6
   .do-something
     .play
+      %ul.somethings.sans-serif
+        %li.canoe-a-river Canoe a River
+        %li.climb-a-wall Climb a Wall
+        %li.hike-a-mountain Hike a Mountain
+        %li.work-with-wood Work with Wood
+        %li.sing-a-song Sing a Song
+        %li.yell-a-chant Yell a Chant
+        %li.play-a-game Play a Game
+        %li.run-a-race Run a Race
+        %li.build-a-fire Build a Fire
+        %li.swing-a-bat Swing a Bat
+        %li.kick-a-ball Kick a Ball
+        %li.shoot-some-hoops Shoot Some Hoops
+        %li.fire-at-a-target Fire at a Target
+        %li.jump-in-a-lake Jump in a Lake
+        %li.waterski Waterski
+        %li.sail-a-boat Sail a Boat
+        %li.conquer-your-fear Conquer Your Fear
+        %li.make-a-friend Make a Friend
+        %li.defeat-an-obstacle Defeat an Obstacle
+        %li.solve-a-problem Solve a Problem
+        %li.earn-an-award Earn a Award
+        %li.have-some-fun Have Some Fun
+        %li.join-a-team Join a Team
+        %li.build-something Build Something
+        %li.discover-something Discover Something
+        %li.win-something Win Something
     .slideshow
+      %img.rounded.shadow{ src: '/images/home/canoe-a-river.jpg', alt: 'canoe-a-river' }
       %img.rounded.shadow{ src: '/images/home/climb-a-wall.jpg', alt: 'climb-a-wall' }
       %img.rounded.shadow{ src: '/images/home/hike-a-mountain.jpg', alt: 'hike-a-mountain' }
-      %img.rounded.shadow{ src: '/images/home/canoe-a-river.jpg', alt: 'canoe-a-river' }
       %img.rounded.shadow{ src: '/images/home/work-with-wood.jpg', alt: 'work-with-wood' }
       %img.rounded.shadow{ src: '/images/home/sing-a-song.jpg', alt: 'sing-a-song' }
       %img.rounded.shadow{ src: '/images/home/yell-a-chant.jpg', alt: 'yell-a-chant' }
@@ -61,15 +59,6 @@
       %img.rounded.shadow{ src: '/images/home/discover-something.jpg', alt: 'discover-something' }
       %img.rounded.shadow{ src: '/images/home/win-something.jpg', alt: 'win-something' }
     .shadow.rounded.video
-    .countdown
-      = javascript_include_tag '/javascripts/libs/countdown'
-
-.grid_12
-  .liner.shadow.rounded
-    %p
-      Founded in 1913, William Lawrence Camp has sought to provide a safe, wholesome environment for boys to learn about themselves, their peers, and their world. This learning starts in the cabin, as the community living atmosphere allows for the development of social and independent living skills, all under the supervision of our compassionate Cabin Leaders. The active lifestyle of camp, in tandem with cabin living, provides the ideal conditions for our campers’ self- esteem to blossom, as they are free to find how it is that they relate to nature and to their companions. These conditions are maintained by our committed staff, who consist largely of former campers—the dedication and competence of our home-grown staff is a testament to the quality of our program.
-    %p
-      William Lawrence Camp is a safe, supportive family in which boys can grow from young campers into compassionate leaders. We are a community focused on maturing by doing, learning and developing skills through experience, to create memories and build character that will last a lifetime. The William Lawrence Camp Family extends beyond the summers spent here—it is a committed, international community filled with strong individuals dedicated to camp, and to each other. The lessons learned here, in the presence of good friends, under the guidance of Cabin Leaders, are applicable far into the future. We like to think every boy who has seen the sun set from the chapel, experienced the energy of the dining hall, and understood the tranquility of our community leaves our care as a better human being. We seek to provide a safe, positive place for boys to grow into better citizens, leaders, and caretakers of the world that they will someday inherit.
 
 - content_for :scripts do
   :javascript
@@ -82,6 +71,7 @@
       })
 
       $('.slideshow').cycle({ speed: 700, timeout: 4000, before: function() {
-        $(".do-something ." + this.alt).effect("pulsate", { times: 2 }, 700);
+        $(".somethings li").hide();
+        $(".somethings ." + this.alt).show();
       } });
     })

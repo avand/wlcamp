@@ -8,6 +8,9 @@ body, .bitter {
 .bitter-italic {
   font-family: 'Bitter I';
 }
+.permanent-marker {
+  font-family: 'Permanent Marker', cursive;
+}
 .sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -194,8 +197,8 @@ footer {
   position: relative;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-top: -111px; /* negative value of footer height */
-  height: 88px;
+  margin-top: -133px; /* negative value of footer height */
+  height: 110px;
   background: rgba(0, 0, 0, .35);
   border-top: 1px solid black;
   border-top: 1px solid rgba(0, 0, 0, .4);
@@ -236,7 +239,7 @@ html, body {
 
 #main {
   overflow:auto;
-  padding-bottom: 111px; /* must be same height as the footer */
+  padding-bottom: 133px; /* must be same height as the footer */
 }
 #main a,
 #main a:link {
@@ -285,11 +288,32 @@ ul.do-something li {
   margin: 0;
 }
 
-.countdown {
-  text-align: center;
-  font-size: 13px;
-  color: #FFF;
-  text-shadow: 0 1px 0 black;
-  height: 44px;
-  line-height: 44px;
+.tagline {
+  color: #000F60;
+  font-size: 32px; line-height: 66px; margin-top: 22px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
+  text-shadow: 0 1px 0 #7CB3F9;
 }
+
+.somethings {
+  padding-left: 0;
+  margin-top: 309px;
+  color: #00124B;
+  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  list-style: none;
+  font-size: 11px;
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.somethings li {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+
