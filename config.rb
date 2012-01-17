@@ -101,6 +101,6 @@ helpers do
   end
 
   def link_to(name, path, options = {})
-    super name, (env == 'production' ? path.gsub('.html') : path), options
+    super name, (ENV['MIDDLEMAN_ENV'] == 'production' && !(path =~ /^http/) ? path.gsub('.html', '') : path), options
   end
 end
