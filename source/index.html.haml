@@ -66,9 +66,7 @@
     $(document).ready(function() {
       $(".play").click(function() {
         $(".slideshow, .play").hide();
-        $(".do-something .video").show().html(
-          '<iframe src="http://player.vimeo.com/video/33915926?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="456" height="324" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
-        );
+        $(".do-something .video").show().html('#{vimeo 33915926, 456}');
       })
 
       $('.slideshow').cycle({ speed: 700, timeout: 4000, before: function() {
