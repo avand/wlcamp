@@ -1,0 +1,287 @@
+html, body
+  height: 100%
+
+html
+  background-color: #2B8EF4
+
+  #flash-detect
+    display: none
+    p
+      background: #FC6
+      border: 1px solid #F00
+      padding: 10px 20px
+      margin: 0
+      font-weight: bold
+
+  body:before
+    content: ""
+    height: 100%
+    float: left
+    width: 0
+    margin-top: -32767px
+
+  body, .bitter
+    font: 15px / 22px "Bitter", Georgia, serif
+
+  .bitter-italic
+    font-family: 'Bitter I'
+
+  .permanent-marker
+    font-family: 'Permanent Marker', cursive
+
+  .sans-serif
+    font-family: 'Lucida Grande', verdana, sans-serif
+
+  h1, h2, h3, h4, h5, h6
+    margin: 0
+    font-size: 15px
+    line-height: 22px
+
+  p, ul, table, img, #flash-detect
+    margin-top: 0
+    margin-bottom: 22px
+
+  p:last-child, ul:last-child
+    margin-bottom: 0
+
+  iframe
+    border: none
+    display: block
+
+  .shadow
+    border-top: 1px solid rgba(255, 255, 255, 0.3)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7)
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7)
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7)
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7)
+
+  .rounded.liner
+    padding-top: 21px
+    padding-bottom: 21px
+
+  .video
+    padding: 2px
+    background: black
+    margin-bottom: 22px
+
+  .rounded
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    border-radius: 6px
+
+  .liner
+    padding: 22px 20px
+    text-shadow: 0 1px 0 white
+    background: #E6E6E6
+    background: rgba(255, 255, 255, 0.8)
+    margin-bottom: 22px
+
+  #header, .subnavigation
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7)
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7)
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7)
+    position: fixed
+    left: 0
+    right: 0
+
+  #header
+    background: #000075
+    background: -moz-linear-gradient(top, #16218c, #000075)
+    background: -o-linear-gradient(top, #16218c, #000075)
+    background: -webkit-gradient(linear, left top, left bottom, from(#16218c), to(#000075))
+    background: linear-gradient(top, #16218c, #000075)
+    text-shadow: 0 -1px 0 black
+    top: 0
+    z-index: 998
+    height: 44px
+    h1
+      font-size: 18px
+    a
+      color: white
+      text-decoration: none
+      &:link, &:visited
+        color: white
+        text-decoration: none
+      &:hover
+        text-decoration: underline
+    ul
+      list-style: none
+      padding-left: 0
+      li
+        float: right
+        padding-left: 25px
+        padding-right: 25px
+        cursor: pointer
+        &:hover
+          text-decoration: none
+    h1, ul li
+      line-height: 44px
+    h1
+      color: #F8F8F8
+    ul
+      color: #F8F8F8
+      a
+        display: block
+    .grid_3
+      position: relative
+
+  #centennial
+    position: absolute
+    top: 39px
+    left: 36px
+    height: 22px
+    width: 163px
+    z-index: 1002
+    .banner
+      font-size: 11px
+      background: url('/images/centennial-banner.png') no-repeat center center
+      height: 22px
+      text-align: center
+      line-height: 20px
+      a
+        color: #351400
+        text-shadow: 0 1px 0 #FFF7CA
+        text-decoration: none
+        &:visited, &:link
+          color: #351400
+          text-shadow: 0 1px 0 #FFF7CA
+          text-decoration: none
+        &:hover
+          text-decoration: underline
+
+  .subnavigation
+    display: none
+    background: #f5f5f3
+    background: -moz-linear-gradient(top, white, #f5f5f3)
+    background: -o-linear-gradient(top, white, #f5f5f3)
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f5f5f3))
+    background: linear-gradient(top, white, #f5f5f3)
+    z-index: 999
+    top: 44px
+    color: #BBB
+    .container_12
+      padding: 11px 0
+    a
+      color: #000075
+      text-decoration: none
+      &:link
+        color: #000075
+        text-decoration: none
+      &:visited
+        color: #16218C
+      &:hover
+        text-decoration: underline
+
+  #footer
+    font-size: 11px
+    text-align: center
+    color: #D0D0D0
+    text-shadow: 0 1px 0 black
+    position: relative
+    padding-top: 11px
+    padding-bottom: 11px
+    margin-top: -111px
+    height: 88px
+    background: #515151
+    background: rgba(0, 0, 0, 0.35)
+    border-top: 1px solid black
+    border-top: 1px solid rgba(0, 0, 0, 0.4)
+    clear: both
+    a
+      color: #D0D0D0
+      text-decoration: none
+      border-bottom: 1px solid #848484
+      &:link, &:visited
+        color: #D0D0D0
+        text-decoration: none
+        border-bottom: 1px solid #848484
+      &:hover
+        border-bottom: 1px solid #D0D0D0
+    address
+      font-style: normal
+
+  #main
+    padding-top: 66px
+    h2
+      color: #000C51
+      font-size: 20px
+      line-height: 33px
+      margin-bottom: 11px
+
+  .slideshow
+    min-height: 1px
+
+  .first
+    margin-left: 0 !important
+    padding-left: 0 !important
+
+  .last
+    margin-right: 0 !important
+    padding-right: 0 !important
+
+  #wrap
+    min-height: 100%
+    width: 100%
+
+  #main
+    overflow: auto
+    padding-bottom: 111px
+    a
+      color: #022DBF
+      text-decoration: none
+      &:link
+        color: #022DBF
+        text-decoration: none
+      &:hover
+        text-decoration: underline
+      &:visited
+        color: #650096
+
+  .do-something
+    .play
+      background: url("/images/home/play.png")
+      height: 330px
+      width: 460px
+      position: absolute
+      z-index: 500
+      cursor: pointer
+    .slideshow
+      height: 330px
+    .video
+      display: none
+      margin: 0
+
+  .tagline, .countdown
+    color: #000F60
+    text-shadow: 0 1px 0 #92CBF9
+
+  .tagline
+    font-size: 32px
+    line-height: 66px
+    margin-top: 22px
+
+  .countdown
+    font-size: 18px
+
+  .somethings
+    padding-left: 0
+    margin-top: 309px
+    color: #00124B
+    background: white
+    background: rgba(255, 255, 255, 0.5)
+    list-style: none
+    font-size: 11px
+    -webkit-border-bottom-right-radius: 6px
+    -webkit-border-bottom-left-radius: 6px
+    -moz-border-radius-bottomright: 6px
+    -moz-border-radius-bottomleft: 6px
+    border-bottom-right-radius: 6px
+    border-bottom-left-radius: 6px
+    li
+      display: none
+      text-align: center
+      font-weight: bold
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)

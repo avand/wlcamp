@@ -1,11 +1,5 @@
 !!! 5
--# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-%html.no-js{ :lang => "en" }
-  <!--<![endif]-->
+%html
   %head
     %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
 
@@ -23,11 +17,12 @@
     %link{ :href => "/stylesheets/grid.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
 
+    %script{ :src => '/javascripts/libs/modernizr-2.0.6.custom.min.js' }
+
     <!--[if !IE 7]>
     %style{ :type => 'text/css' }
       \#wrap { display:table; height:100%; }
     <![endif]-->
-
   %body
     #wrap
       #header
@@ -49,6 +44,10 @@
         .nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
       #main
         .container_12
+          #flash-detect.grid_12
+            %p
+              Unfortunately to watch our videos you&rsquo;ll need to install Flash.
+              = link_to 'Install Flash now.', 'http://get.adobe.com/flashplayer/', target: :blank
           = yield
     #footer
       .container_12
@@ -74,7 +73,14 @@
     %script{ :src => '/javascripts/libs/jquery.backstretch.min.js' }
     %script{ :src => '/javascripts/libs/jquery.cycle.lite.js' }
     %script{ :src => '/javascripts/libs/jquery.easing.js' }
+    %script{ :src => '/javascripts/libs/flash-detect.min.js' }
     %script{ :src => '/javascripts/custom.js' }
+
+    :javascript
+      if (!Modernizr.video && !FlashDetect.installed){
+        $("#flash-detect").show()
+      }
+
     = yield_content :scripts
     - if ENV['MIDDLEMAN_ENV'] != 'production'
       %script{ :src => "/javascripts/960gridder.js" }
