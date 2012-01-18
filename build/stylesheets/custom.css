@@ -80,9 +80,8 @@ html {
     top: 0;
     z-index: 998;
     height: 44px; }
-    html #header h1 {
-      font-size: 18px; }
     html #header a {
+      display: block;
       color: white;
       text-decoration: none; }
       html #header a:link, html #header a:visited {
@@ -91,48 +90,46 @@ html {
       html #header a:hover {
         text-decoration: underline; }
     html #header ul {
+      color: #f8f8f8;
       list-style: none;
       padding-left: 0; }
       html #header ul li {
         float: right;
         padding-left: 25px;
         padding-right: 25px;
-        cursor: pointer; }
+        cursor: pointer;
+        line-height: 44px; }
         html #header ul li:hover {
           text-decoration: none; }
-    html #header h1, html #header ul li {
-      line-height: 44px; }
     html #header h1 {
-      color: #f8f8f8; }
-    html #header ul {
-      color: #f8f8f8; }
-      html #header ul a {
-        display: block; }
+      color: #f8f8f8;
+      font-size: 16px;
+      line-height: 42px; }
     html #header .grid_3 {
       position: relative; }
-  html #centennial {
-    position: absolute;
-    top: 39px;
-    left: 36px;
-    height: 22px;
-    width: 163px;
-    z-index: 1002; }
-    html #centennial .banner {
-      font-size: 11px;
-      background: url("/images/centennial-banner.png") no-repeat center center;
+    html #header #centennial {
+      position: absolute;
+      top: 37px;
+      left: 19px;
       height: 22px;
-      text-align: center;
-      line-height: 20px; }
-      html #centennial .banner a {
-        color: #351400;
-        text-shadow: 0 1px 0 #fff7ca;
-        text-decoration: none; }
-        html #centennial .banner a:visited, html #centennial .banner a:link {
+      width: 163px;
+      z-index: 1002; }
+      html #header #centennial .banner {
+        font-size: 11px;
+        background: url("/images/centennial-banner.png") no-repeat center center;
+        height: 22px;
+        text-align: center;
+        line-height: 20px; }
+        html #header #centennial .banner a {
           color: #351400;
           text-shadow: 0 1px 0 #fff7ca;
           text-decoration: none; }
-        html #centennial .banner a:hover {
-          text-decoration: underline; }
+          html #header #centennial .banner a:visited, html #header #centennial .banner a:link {
+            color: #351400;
+            text-shadow: 0 1px 0 #fff7ca;
+            text-decoration: none; }
+          html #header #centennial .banner a:hover {
+            text-decoration: underline; }
   html .subnavigation {
     display: none;
     background: #f5f5f3;
