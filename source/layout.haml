@@ -7,10 +7,9 @@
 %html.no-js{ :lang => "en" }
   <!--<![endif]-->
   %head
-    %meta{ :charset => "utf-8" }/
+    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
 
-    -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
-    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+    %meta{ :charset => "utf-8" }/
 
     %title
     %meta{ :name => "description", :content => "" }/
@@ -19,14 +18,10 @@
     - background = request.path.gsub('.html', '.jpg')
     %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
 
-    -# Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
-
     -# CSS: implied media="all"
     %link{ :href => "/stylesheets/reset.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/stylesheets/grid.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
-
-    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
 
     <!--[if !IE 7]>
     %style{ :type => 'text/css' }
