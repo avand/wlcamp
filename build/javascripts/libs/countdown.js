@@ -6,7 +6,7 @@ CountStepper = -1;
 
 LeadingZero = true;
 
-DisplayFormat = "Camp begins in %%D%% days, %%H%% hours, %%M%% minutes and %%S%% seconds";
+DisplayFormat = "Camp begins in %%D%% days %%H%%:%%M%%:%%S%%";
 
 FinishMessage = "Camp Begins Today!";
 
