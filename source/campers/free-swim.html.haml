@@ -3,10 +3,13 @@
     %h2 Free Swim
 
     %p
-      Do what you want. No, seriously, anything you want to: go swimming,
-      shoot archery, play ping-pong, read a book on the knoll and get
-      distracted and watch some ants for a while, climb the tower,
-      sail a catamaran, play volleyball, or a round of Frolf.
+      Do what you want. No, seriously, anything you want to:
+      == #{link_to 'go swimming', '/tour/waterfront.html'},
+      == #{link_to 'shoot archery', '/tour/archery.html'},
+      == play ping-pong, read a book on the #{link_to 'Knoll', '/tour/knoll.html'} and get
+      == distracted and watch some ants for a while, #{link_to 'climb the tower', '/tour/challenge-course.html'},
+      == #{link_to 'sail a catamaran', '/tour/waterfront.html'},
+      == play #{link_to 'volleyball', '/tour/sports.html'}, or a round of Frolf.
       It&rsquo;s your time, every day, to have free reign of the camp:
       just get out there, and have fun.
 
