@@ -51,7 +51,7 @@
               %li.menu-item{ :'data-name' => 'campers' } Campers
               %li.menu-item{ :'data-name' => 'tour' } Tour
       - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
-        #nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
+        .nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
       #main
         .container_12
           = yield
