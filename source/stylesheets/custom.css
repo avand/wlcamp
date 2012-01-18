@@ -228,6 +228,7 @@ html, body {
 
 #wrap {
   min-height: 100%;
+  width: 100%;
 }
 
 #main {
@@ -315,5 +316,3 @@ ul.do-something li {
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-
-
