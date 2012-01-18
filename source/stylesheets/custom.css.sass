@@ -97,9 +97,8 @@ html
     top: 0
     z-index: 998
     height: 44px
-    h1
-      font-size: 18px
     a
+      display: block
       color: white
       text-decoration: none
       &:link, &:visited
@@ -108,6 +107,7 @@ html
       &:hover
         text-decoration: underline
     ul
+      color: #F8F8F8
       list-style: none
       padding-left: 0
       li
@@ -115,42 +115,38 @@ html
         padding-left: 25px
         padding-right: 25px
         cursor: pointer
+        line-height: 44px
         &:hover
           text-decoration: none
-    h1, ul li
-      line-height: 44px
     h1
       color: #F8F8F8
-    ul
-      color: #F8F8F8
-      a
-        display: block
+      font-size: 16px
+      line-height: 42px
     .grid_3
       position: relative
-
-  #centennial
-    position: absolute
-    top: 39px
-    left: 36px
-    height: 22px
-    width: 163px
-    z-index: 1002
-    .banner
-      font-size: 11px
-      background: url('/images/centennial-banner.png') no-repeat center center
+    #centennial
+      position: absolute
+      top: 37px
+      left: 19px
       height: 22px
-      text-align: center
-      line-height: 20px
-      a
-        color: #351400
-        text-shadow: 0 1px 0 #FFF7CA
-        text-decoration: none
-        &:visited, &:link
+      width: 163px
+      z-index: 1002
+      .banner
+        font-size: 11px
+        background: url('/images/centennial-banner.png') no-repeat center center
+        height: 22px
+        text-align: center
+        line-height: 20px
+        a
           color: #351400
           text-shadow: 0 1px 0 #FFF7CA
           text-decoration: none
-        &:hover
-          text-decoration: underline
+          &:visited, &:link
+            color: #351400
+            text-shadow: 0 1px 0 #FFF7CA
+            text-decoration: none
+          &:hover
+            text-decoration: underline
 
   .subnavigation
     display: none
