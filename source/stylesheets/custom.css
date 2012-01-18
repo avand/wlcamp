@@ -5,13 +5,9 @@ html {
 body, .bitter {
   font: 15px/22px 'Bitter', Georgia, serif;
 }
-.bitter-italic {
-  font-family: 'Bitter I';
-}
-.permanent-marker {
-  font-family: 'Permanent Marker', cursive;
-}
-.sans-serif { font-family: 'Lucida Grande', verdana, sans-serif; }
+.bitter-italic    { font-family: 'Bitter I'; }
+.permanent-marker { font-family: 'Permanent Marker', cursive; }
+.sans-serif       { font-family: 'Lucida Grande', verdana, sans-serif; }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 15px;
@@ -28,6 +24,10 @@ iframe {
   border: none;
   display: block;
 }
+img {
+  overflow: hidden;
+  margin-bottom: 22px;
+}
 .shadow {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
@@ -38,21 +38,6 @@ iframe {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7);
 }
-.rounded {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-img {
-  overflow: hidden;
-  margin-bottom: 22px;
-}
-.liner {
-  padding: 22px 20px;
-  text-shadow: 0 1px 0 white;
-  background: rgba(255, 255, 255, .8);
-  margin-bottom: 22px;
-}
 .rounded.liner {
   padding-top: 21px;
   padding-bottom: 21px;
@@ -60,6 +45,17 @@ img {
 .video {
   padding: 2px;
   background: black;
+  margin-bottom: 22px;
+}
+.rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.liner {
+  padding: 22px 20px;
+  text-shadow: 0 1px 0 white;
+  background: rgba(255, 255, 255, .8);
   margin-bottom: 22px;
 }
 header,
@@ -195,8 +191,8 @@ footer {
   position: relative;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-top: -133px; /* negative value of footer height */
-  height: 110px;
+  margin-top: -111px; /* negative value of footer height */
+  height: 88px;
   background: rgba(0, 0, 0, .35);
   border-top: 1px solid black;
   border-top: 1px solid rgba(0, 0, 0, .4);
@@ -237,7 +233,7 @@ html, body {
 
 #main {
   overflow:auto;
-  padding-bottom: 133px; /* must be same height as the footer */
+  padding-bottom: 111px; /* must be same height as the footer */
 }
 #main a,
 #main a:link {
@@ -286,11 +282,17 @@ ul.do-something li {
   margin: 0;
 }
 
-.tagline {
+.tagline, .countdown {
   color: #000F60;
-  font-size: 32px; line-height: 66px; margin-top: 22px;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
-  text-shadow: 0 1px 0 #7CB3F9;
+  text-shadow: 0 1px 0 #92CBF9;
+}
+.tagline {
+  font-size: 32px;
+  line-height: 66px;
+  margin-top: 22px;
+}
+.countdown {
+  font-size: 18px;
 }
 
 .somethings {
@@ -312,6 +314,7 @@ ul.do-something li {
   display: none;
   text-align: center;
   font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 
