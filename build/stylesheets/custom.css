@@ -58,7 +58,7 @@ img {
   background: rgba(255, 255, 255, .8);
   margin-bottom: 22px;
 }
-header,
+#header,
 .subnavigation {
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
@@ -67,7 +67,7 @@ header,
   left: 0;
   right: 0;
 }
-header {
+#header {
   background: #000075;
   background: -moz-linear-gradient(top, #16218C, #000075);
   background: -o-linear-gradient(top, #16218C, #000075);
@@ -78,43 +78,43 @@ header {
   z-index: 998;
   height: 44px;
 }
-header h1 {
+#header h1 {
   font-size: 18px;
 }
-header a,
-header a:link,
-header a:visited {
+#header a,
+#header a:link,
+#header a:visited {
   color: white;
   text-decoration: none;
 }
-header a:hover {
+#header a:hover {
   text-decoration: underline;
 }
-header ul {
+#header ul {
   list-style: none;
   padding-left: 0;
 }
-header ul li {
+#header ul li {
   float: right;
   padding-left: 25px;
   padding-right: 25px;
   cursor: pointer;
 }
-header ul li:hover {
+#header ul li:hover {
   text-decoration: none;
 }
-header h1,
-header ul li {
+#header h1,
+#header ul li {
   line-height: 44px;
 }
-header h1,
-header ul {
+#header h1,
+#header ul {
   color: #F8F8F8;
 }
-header ul a {
+#header ul a {
   display: block;
 }
-header .grid_3 {
+#header .grid_3 {
   position: relative;
 }
 #centennial {
@@ -167,27 +167,26 @@ header .grid_3 {
 .subnavigation a:hover {
   text-decoration: underline;
 }
-
-footer {
+#footer {
   font-size: 11px;
   text-align: center;
   color: #D0D0D0;
   text-shadow: 0 1px 0 black;
 }
-footer a,
-footer a:link,
-footer a:visited {
+#footer a,
+#footer a:link,
+#footer a:visited {
   color: #D0D0D0;
   text-decoration: none;
   border-bottom: 1px solid #848484;
 }
-footer a:hover {
+#footer a:hover {
   border-bottom: 1px solid #D0D0D0;
 }
-footer address {
+#footer address {
   font-style: normal;
 }
-footer {
+#footer {
   position: relative;
   padding-top: 11px;
   padding-bottom: 11px;
