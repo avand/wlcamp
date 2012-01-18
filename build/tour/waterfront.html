@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class='no-js' lang='en'>
-  <!--<![endif]-->
+<html>
   <head>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker' rel='stylesheet' type='text/css' />
     <meta charset='utf-8' />
@@ -15,6 +10,7 @@
     <link href='/stylesheets/reset.css?v=1' media='all' rel='stylesheet' />
     <link href='/stylesheets/grid.css?v=1' media='all' rel='stylesheet' />
     <link href='/stylesheets/custom.css?v=1' media='all' rel='stylesheet' />
+    <script src='/javascripts/libs/modernizr-2.0.6.custom.min.js'></script>
     <!--[if !IE 7]>
     <style type='text/css'>
       #wrap { display:table; height:100%; }
@@ -108,6 +104,12 @@
         </div>
       <div id='main'>
         <div class='container_12'>
+          <div class='grid_12' id='flash-detect'>
+            <p>
+              Unfortunately to watch our videos you&rsquo;ll need to install Flash.
+              <a target="blank" href="http://get.adobe.com/flashplayer/">Install Flash now.</a>
+            </p>
+          </div>
           <div class='grid_6'>
               <div class='liner shadow rounded'>
                 <h2>Waterfront</h2>
@@ -117,9 +119,7 @@
                   a top-quality swimming area, fishing equipment and a volleyball court for those taking a break from the water.
                 </p>
               </div>
-              <div class='shadow rounded video'>
-                <iframe height='324' src='http://player.vimeo.com/video/32745105?title=0&amp;byline=0&amp;portrait=0' width='456'></iframe>
-              </div>
+              <div class='shadow rounded video'><iframe src="http://player.vimeo.com/video/32745105?title=0&byline=0&portrait=0" width="456" height="324" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe></div>
               <div class='liner shadow rounded'>
                 <h2>Fishing</h2>
                 <p>
@@ -127,9 +127,7 @@
                   waters of Lower Beech Pond. Catch a bass or a trout and our chef will cook it for your dinner!
                 </p>
               </div>
-              <div class='shadow rounded video'>
-                <iframe height='324' src='http://player.vimeo.com/video/32744737?title=0&amp;byline=0&amp;portrait=0' width='456'></iframe>
-              </div>
+              <div class='shadow rounded video'><iframe src="http://player.vimeo.com/video/32744737?title=0&byline=0&portrait=0" width="456" height="324" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe></div>
               <div class='liner shadow rounded'>
                 <h2>Canoeing &amp; Kayaking</h2>
                 <p>
@@ -137,14 +135,10 @@
                   Forward strokes, t-rescues, and for the intrepid few, we&rsquo;ll teach you how to Eskimo roll a kayak.
                 </p>
               </div>
-              <div class='shadow rounded video'>
-                <iframe height='324' src='http://player.vimeo.com/video/32744982?title=0&amp;byline=0&amp;portrait=0' width='456'></iframe>
-              </div>
+              <div class='shadow rounded video'><iframe src="http://player.vimeo.com/video/32744982?title=0&byline=0&portrait=0" width="456" height="324" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe></div>
             </div>
             <div class='grid_6'>
-              <div class='shadow rounded video'>
-                <iframe height='324' src='http://player.vimeo.com/video/32745079?title=0&amp;byline=0&amp;portrait=0' width='456'></iframe>
-              </div>
+              <div class='shadow rounded video'><iframe src="http://player.vimeo.com/video/32745079?title=0&byline=0&portrait=0" width="456" height="324" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe></div>
               <div class='liner shadow rounded'>
                 <h2>Waterskiing</h2>
                 <p>
@@ -161,9 +155,7 @@
                   you will have the opportunity to unleash your inner pirate.
                 </p>
               </div>
-              <div class='shadow rounded video'>
-                <iframe height='324' src='http://player.vimeo.com/video/31702760?title=0&amp;byline=0&amp;portrait=0' width='456'></iframe>
-              </div>
+              <div class='shadow rounded video'><iframe src="http://player.vimeo.com/video/31702760?title=0&byline=0&portrait=0" width="456" height="324" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe></div>
               <div class='liner shadow rounded'>
                 <h2>Swimming</h2>
                 <p>
@@ -208,7 +200,15 @@
     <script src='/javascripts/libs/jquery.backstretch.min.js'></script>
     <script src='/javascripts/libs/jquery.cycle.lite.js'></script>
     <script src='/javascripts/libs/jquery.easing.js'></script>
+    <script src='/javascripts/libs/flash-detect.min.js'></script>
     <script src='/javascripts/custom.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        if (!Modernizr.video && !FlashDetect.installed){
+          $("#flash-detect").show()
+        }
+      //]]>
+    </script>
     
   </body>
 </html>
