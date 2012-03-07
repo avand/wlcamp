@@ -1,4 +1,4 @@
-TargetDate = "06/24/2012 12:00 AM";
+TargetDate = "06/24/2012 10:00 AM";
 
 //CountActive = true;
 
