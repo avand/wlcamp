@@ -93,7 +93,7 @@ end
 
 helpers do
   def link_to_unless_current(text, path)
-    if path =~ /#{request.path}/
+    if "/#{request.path}" =~ /#{path}/
       text
     else
       link_to text, path
