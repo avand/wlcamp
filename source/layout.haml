@@ -73,11 +73,13 @@
           .social
             %span.facebook= link_to 'Staff', '/staff.html', target: :blank
             &nbsp;&middot;&nbsp;
-            %span.facebook= link_to 'Find us on Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
+            %span.facebook= link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
+            &nbsp;&middot;&nbsp;
+            %span.youtube= link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
             &nbsp;&middot;&nbsp;
             %span.aca= link_to 'Accredited by the American Camp Association', 'http://find.acacamps.org/cgi/details.cgi?id=6119', target: :blank
             &nbsp;&middot;&nbsp;
-            %span.youtube= link_to 'Watch us on YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
+            = mail_to "knoll@wlcamp.org", "Email us at knoll@wlcamp.org"
           %address{ style: 'display block' }
             139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816
             &nbsp;&middot;&nbsp;
