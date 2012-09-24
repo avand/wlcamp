@@ -32,7 +32,7 @@ html {
   html p, html ul, html table, html img, html #flash-detect {
     margin-top: 0;
     margin-bottom: 22px; }
-  html p:last-child, html ul:last-child {
+  html p:last-child, html ul:last-child, html table:last-child {
     margin-bottom: 0; }
   html iframe {
     border: none;
