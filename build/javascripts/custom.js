@@ -1,15 +1,17 @@
+var centennialBanner = null;
+
 $.backstretch($('meta[name=background]').attr('content'), {
   speed: 600, centeredX: false, centeredY: false
 });
 
 function showSubnavigation(element) {
   element.css('height', element.data('height')).show();
-  centennial.hide();
+  centennialBanner.hide();
 };
 
 function hideSubnavigation(element) {
   element.hide();
-  centennial.show();
+  centennialBanner.show();
 }
 
 function adjustMenuPadding(current, currentPadding, prevPaddingRight, nextPaddingLeft) {
@@ -36,7 +38,7 @@ function decreaseMenuItemPadding(element) {
 };
 
 $(document).ready(function() {
-  centennial = $("#centennial");
+  centennialBanner = $("#centennial");
 
   $('.subnavigation').each(function() {
     $(this).data('height', $(this).height());
