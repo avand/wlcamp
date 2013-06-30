@@ -46,7 +46,7 @@ function CountBack(secs) {
 }
 
 function putspan() {
-  document.write("<span id='cntdwn'></span>");
+  document.write("<div id='cntdwn'></div>");
 }
 
 CountStepper = Math.ceil(CountStepper);

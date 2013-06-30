@@ -2,14 +2,33 @@
 title: "William Lawrence Camp is a boys summer camp in New Hampshire."
 ---
 
-.grid_6
+.grid_12.tagline-and-countdown
   .tagline.permanent-marker Do Something. This Summer!
   .countdown.permanent-marker= javascript_include_tag '/javascripts/libs/countdown'
+
+.grid_6.intro
+  .liner.shadow.rounded
+    %p
+      At our overnight summer camp, we believe that the best way for boys to
+      learn is through being active, especially while surrounded by natural
+      beauty.
+
+    %p
+      Our well-balanced summer camp program offers instruction in diverse activities,
+      such as #{link_to "Archery", "/tour/archery.html"},
+      #{link_to "Waterskiing", "/tour/waterskiing.html"}, and
+      #{link_to "Wilderness Trips", "/tour/wilderness-trips.html"},
+      just to name a few of our activities!
+
+    %p
+      With our #{link_to "100 years", "/100-years.html"} of experience,
+      you can feel confident that your child will be safe as he has a summer
+      which he will always remember &mdash; full of fun and learning new skills!
 
 .grid_6
   .do-something
     .play
-      %ul.somethings.sans-serif
+      %ul.somethings.permanent-marker
         %li.canoe-a-river Canoe a River
         %li.climb-a-wall Climb a Wall
         %li.hike-a-mountain Hike a Mountain
@@ -36,7 +55,7 @@ title: "William Lawrence Camp is a boys summer camp in New Hampshire."
         %li.build-something Build Something
         %li.discover-something Discover Something
         %li.win-something Win Something
-    .slideshow{ style: 'margin-bottom: 22px' }
+    .slideshow
       %img.rounded.shadow{ src: '/images/home/canoe-a-river.jpg', alt: 'canoe-a-river', width: 460, height: 330 }
       %img.rounded.shadow{ src: '/images/home/climb-a-wall.jpg', alt: 'climb-a-wall', width: 460, height: 330 }
       %img.rounded.shadow{ src: '/images/home/hike-a-mountain.jpg', alt: 'hike-a-mountain', width: 460, height: 330 }
@@ -64,6 +83,41 @@ title: "William Lawrence Camp is a boys summer camp in New Hampshire."
       %img.rounded.shadow{ src: '/images/home/discover-something.jpg', alt: 'discover-something', width: 460, height: 330 }
       %img.rounded.shadow{ src: '/images/home/win-something.jpg', alt: 'win-something', width: 460, height: 330 }
     .shadow.rounded.video
+
+.grid_4
+  .liner.shadow.rounded
+    %h2 Parents
+    %p
+      At our overnight summer camp, a boy learns new skills, develops self-confidence
+      and makes friends for a lifetime.
+    %ul
+      %li= link_to "Camper Care", "/parents/camper-care.html"
+      %li= link_to "Forms", "/parents/forms.html"
+      %li= link_to "Sessions & Tuition", "/parents/sessions-tuitions-2013.html"
+      %li= link_to "Why WLC?", "/parents/why-wlc.html"
+
+.grid_4
+  .liner.shadow.rounded
+    %h2 Campers
+    %p
+      Our boys summer camp remains committed to providing today’s youth with healthy
+      opportunities for fun, adventure and growth.
+    %ul
+      %li= link_to "Evening Program", "/campers/evening-program.html"
+      %li= link_to "Free Swim", "/campers/free-swim.html"
+      %li= link_to "Special Programs", "/campers/special-programs.html"
+      %li= link_to "Typical Day", "/campers/typical-day.html"
+
+.grid_4
+  .liner.shadow.rounded
+    %h2 Staff
+    %p
+      Our #{link_to "overnight summer camp staff", "/parents/our-staff.html"} is
+      dedicated to the safety, well-being, and positive growth of today’s youth.
+    %ul
+      %li= link_to "Our Staff", "/parents/our-staff.html"
+      %li= link_to "Work at WLC", "/staff.html"
+    %br
 
 - content_for :scripts do
   :javascript
