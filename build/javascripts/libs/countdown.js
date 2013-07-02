@@ -1,7 +1,7 @@
 Now            = new Date();
-TargetDate2013 = new Date(2013, 6, 23, 10, 00, 00, 00);
-TargetDate2014 = new Date(2014, 6, 22, 10, 00, 00, 00);
-TargetDate2015 = new Date(2015, 6, 21, 10, 00, 00, 00);
+TargetDate2013 = new Date(2013, 5, 23, 10, 00, 00, 00);
+TargetDate2014 = new Date(2014, 5, 22, 10, 00, 00, 00);
+TargetDate2015 = new Date(2015, 5, 21, 10, 00, 00, 00);
 
 if (Now < TargetDate2013) { TargetDate = TargetDate2013; } else
 if (Now < TargetDate2014) { TargetDate = TargetDate2014; } else
@@ -11,8 +11,8 @@ CountActive   = true;
 CountStepper  = -1;
 CountStepper  = -1;
 DisplayFormat = "Camp begins in %%D%% days %%H%%:%%M%%:%%S%%";
-FinishMessage = "Camp Begins Today!";
-LeadingZero   = false; // What does false do?
+FinishMessage = "Camp begins today!";
+LeadingZero   = true;
 
 function calcage(secs, num1, num2) {
   s = ((Math.floor(secs/num1))%num2).toString();
@@ -46,7 +46,7 @@ function CountBack(secs) {
 }
 
 function putspan() {
-  document.write("<span id='cntdwn'></span>");
+  document.write("<div id='cntdwn'></div>");
 }
 
 CountStepper = Math.ceil(CountStepper);
