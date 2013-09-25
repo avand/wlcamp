@@ -2,6 +2,8 @@
 # Compass
 ###
 
+::Compass.configuration.sass_options = { :line_comments => false }
+
 # Susy grids in Compass
 # First: gem install compass-susy-plugin
 # require 'susy'
