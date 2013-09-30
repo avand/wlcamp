@@ -51,10 +51,6 @@ To work on the site:
 * Commit your changes and push to branch on GitHub.
 * Make a pull request.
 
-That's not so bad, right?! OK, I agree, it's a bit complex but you've
-got to trust me that it's worth the learning curve. This site is such
-a breeze to maintain.
-
 ## Help
 
 If you need help, add [email][avand] or call (312-399-6025) Avand.
