@@ -8,6 +8,7 @@
     %title= data.page.title
     %meta{ :name => "description", :content => "" }/
     %meta{ :name => "author", :content => "" }/
+    %meta{ :name => "keywords", :content => "boys overnight summer camp, summer camp, traditional camp, traditional overnight camp" }/
 
     - background = request.path.gsub('.html', '.jpg')
     %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
