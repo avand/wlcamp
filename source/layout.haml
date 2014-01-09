@@ -29,7 +29,7 @@
       \#wrap { display:table; height:100%; }
     <![endif]-->
 
-    - if ENV['MIDDLEMAN_ENV'] == "production"
+    - if ENV["RACK_ENV"] == "production"
       :javascript
         var _gauges = _gauges || [];
         (function() {
@@ -109,5 +109,5 @@
 
     = yield_content :scripts
 
-    - if ENV['MIDDLEMAN_ENV'] != 'production'
+    - if ENV["RACK_ENV"] != "production"
       %script{ :src => "/javascripts/960gridder.js" }

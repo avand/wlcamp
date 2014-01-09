@@ -44,10 +44,6 @@ To work on the site:
 * Make changes to the files in the "source" directory. Reload your
   browser to see the changes. Middleman will automatically update
   the static files.
-* When you're ready to compile the static HTML for production, run
-  `MIDDLEMAN_ENV=production bundle exec middleman build`. That
-  environmental variable changes a few important things for the
-  production build.
 * Commit your changes and push to branch on GitHub.
 * Make a pull request.
 
