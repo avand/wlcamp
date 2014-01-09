@@ -90,9 +90,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script (= 2.2.0)
-  eventmachine (= 1.0.0)
-  execjs (= 1.4.0)
   middleman (= 3.1.0)
   rake (= 10.1.1)
   thin (= 1.6.1)
