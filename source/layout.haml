@@ -4,10 +4,10 @@
     %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
 
     %meta{ :charset => "utf-8" }/
-
     %title= data.page.title
-    %meta{ :name => "description", :content => "" }/
+    %meta{ :name => "description", :content => data.page.description }/
     %meta{ :name => "author", :content => "" }/
+    %meta{ :name => "keywords", :content => "boys overnight summer camp, summer camp, traditional camp, traditional overnight camp, new hampshire summer camps, new hampshire summer camp, summer camps in new hampshire, summer camp new hampshire, summer camps new hampshire, summer camp in new hampshire, overnight summer camps in new hampshire, new hampshire boy camps, boy camps new hampshire" }/
 
     - background = request.path.gsub('.html', '.jpg')
     %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
@@ -48,8 +48,6 @@
         .container_12
           .grid_3
             %h1= link_to 'William Lawrence Camp', '/'
-            #centennial
-              .banner.sans-serif= link_to 'Celebrating 100 Years!', '/100-years.html'
           .grid_9
             %ul
               %li.menu-item.last{ :'data-name' => 'contact' }= link_to 'Contact', '/contact.html'
