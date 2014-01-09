@@ -30,7 +30,8 @@ This has made things substantially simpler.
 
 To get set up, you'll need a few things:
 
-* A computer with [Ruby][ruby] installed on it.
+* A computer with [Ruby][ruby] 2.0.0 installed on it. It's **highly
+  recommended** that you manage Ruby versions with [rbenv][rbenv].
 * A GitHub account with access to the code.
 
 To work on the site:
@@ -56,3 +57,4 @@ If you need help, add [email][avand] or call (312-399-6025) Avand.
 [heroku]: http://heroku.com/
 [avand]: avand@avandamiri.com
 [ruby]: http://www.ruby-lang.org/en/
+[rbenv]: http://rbenv.org
