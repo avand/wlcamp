@@ -31,7 +31,7 @@ else
       if File.exists?(page)
         [200, { 'Content-Type' => Rack::Mime.mime_type(extension) }, [File.read(page)]]
       else
-        [404, { 'Content-Type' => 'text/plain' }, ['Page not found']]
+        [404, { 'Content-Type' => 'text/html' }, [File.read(@root + "/404.html")]]
       end
     end
   }
