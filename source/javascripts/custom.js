@@ -30,11 +30,11 @@ function adjustMenuPadding(current, currentPadding, prevPaddingRight, nextPaddin
 }
 
 function increaseMenuItemPadding(element) {
-  adjustMenuPadding(element, '50px', '0', '0')
+  adjustMenuPadding(element, '40px', '0', '0')
 };
 
 function decreaseMenuItemPadding(element) {
-  adjustMenuPadding(element, '25px', '25px', '25px')
+  adjustMenuPadding(element, '20px', '20px', '20px')
 };
 
 $(document).ready(function() {
