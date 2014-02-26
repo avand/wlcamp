@@ -10,10 +10,6 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/100-years</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
   <loc>http://wlcamp.org/contact</loc>
   <changefreq>yearly</changefreq>
 </url>
@@ -22,7 +18,15 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
+  <loc>http://wlcamp.org/tour/barn</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
   <loc>http://wlcamp.org/tour/cabins</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://wlcamp.org/tour/centennial-lodge</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
@@ -46,6 +50,10 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
+  <loc>http://wlcamp.org/tour/knoll</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
   <loc>http://wlcamp.org/tour/outdoorsman-skills</loc>
   <changefreq>yearly</changefreq>
 </url>
@@ -55,10 +63,6 @@
 </url>
 <url>
   <loc>http://wlcamp.org/tour/sports</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/tour/knoll</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
@@ -94,10 +98,6 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/family-camp</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
   <loc>http://wlcamp.org/parents/forms</loc>
   <changefreq>yearly</changefreq>
 </url>
@@ -111,6 +111,10 @@
 </url>
 <url>
   <loc>http://wlcamp.org/parents/why-wlc</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://wlcamp.org/tour/alumni-camp</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
