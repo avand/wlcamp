@@ -12,7 +12,7 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
     %p
       At our traditional overnight summer camp, we believe that the best way for boys to
       learn and build self-confidence is through being active, having fun, making friends, and participating in their favorite activities.
-    
+
     %p
       Our traditional camp program offers instruction in a variety of activities
       such as #{link_to "traditional sports", "/tour/sports.html"},
@@ -20,13 +20,13 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
       #{link_to "climbing", "/tour/challenge-course.html"}, and
       #{link_to "wilderness trips", "/tour/wilderness-trips.html"},
       just to name a few!
-    
+
     %p
-      With over 100 years of experience and 
+      With over 100 years of experience and
       #{link_to "expertly trained traditional camp staff", "/parents/our-staff.html"},
       you can feel confident that your boy will have a summer
       which he will remember for the rest of his life &mdash; full of fun, friendship and new skills!
-    
+
 .grid_6
   .do-something
     .play
@@ -86,40 +86,7 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
       %img.rounded.shadow{ src: '/images/home/win-something.jpg', alt: 'win-something', width: 460, height: 330 }
     .shadow.rounded.video
 
-.grid_4
-  .liner.shadow.rounded
-    %h2 Parents
-    %p
-      At our boys overnight summer camp, your son can learn new skills, develop self-confidence
-      and make friends that last a lifetime.
-    %ul
-      %li= link_to "Camper Care", "/parents/camper-care.html"
-      %li= link_to "Sessions & Tuition", "/parents/sessions-tuitions-2014.html"
-      %li= link_to "Why WLC?", "/parents/why-wlc.html"
-      %li= link_to "Forms", "/parents/forms.html"
-
-.grid_4
-  .liner.shadow.rounded
-    %h2 Campers
-    %p
-      Our summer camp remains committed to providing boys with fun activities while giving them a chance to learn some new skills.
-    %ul
-      %li= link_to "Typical Day", "/campers/typical-day.html"
-      %li= link_to "Free Swim", "/campers/free-swim.html"
-      %li= link_to "Special Programs", "/campers/special-programs.html"
-      %li= link_to "Evening Program", "/campers/evening-program.html"
-
-.grid_4
-  .liner.shadow.rounded
-    %h2 Staff
-    %p
-      Our #{link_to "overnight summer camp staff", "/parents/our-staff.html"} is
-      dedicated to the safety, well-being, and positive growth of today’s youth.
-    %ul
-      %li= link_to "Our Staff", "/parents/our-staff.html"
-      %li= link_to "Work at WLC", "/staff.html"
-    %br
-
+= partial "./shared/trifecta"
 - content_for :scripts do
   :javascript
     $(document).ready(function() {
