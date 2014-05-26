@@ -1,7 +1,7 @@
 Now            = new Date();
 TargetDate2013 = new Date(2013, 5, 23, 10, 00, 00, 00);
-TargetDate2014 = new Date(2014, 5, 22, 10, 00, 00, 00);
-TargetDate2015 = new Date(2015, 5, 21, 10, 00, 00, 00);
+TargetDate2014 = new Date(2014, 5, 29, 10, 00, 00, 00);
+TargetDate2015 = new Date(2015, 5, 28, 10, 00, 00, 00);
 
 if (Now < TargetDate2013) { TargetDate = TargetDate2013; } else
 if (Now < TargetDate2014) { TargetDate = TargetDate2014; } else
