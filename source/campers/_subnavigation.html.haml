@@ -1,6 +1,11 @@
-.container_12
-  .grid_2== &raquo; #{link_to_unless_current 'Camp Spirit', '/campers/camp-spirit.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Evening Program', '/campers/evening-program.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Free Swim', '/campers/free-swim.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Special Programs', '/campers/special-programs.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Typical Day', '/campers/typical-day.html'}
+%li.dropdown
+  %a.dropdown-toggle{ 'data-toggle' => 'dropdown'}
+    .unselectable 
+      Campers
+      %b.caret
+  %ul.dropdown-menu
+    %li=link_to 'Camp Spirit', '/campers/camp-spirit.html'
+    %li=link_to 'Evening Program', '/campers/evening-program.html'
+    %li=link_to 'Free Swim', '/campers/free-swim.html'
+    %li=link_to 'Special Programs', '/campers/special-programs.html'
+    %li=link_to 'Typical Day', '/campers/typical-day.html'

@@ -1,8 +1,13 @@
-.container_12
-  .grid_2== &raquo; #{link_to 'Blog', 'http://wlcamp.blogspot.com', target: :blank}
-  .grid_2== &raquo; #{link_to_unless_current 'Calendar', '/news/calendar.html'}
-  .grid_2== &raquo; #{link_to 'Photo Gallery', 'https://picasaweb.google.com/101625798794361011934?noredirect=1'}
-  .grid_2== &raquo; #{link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank}
-  .grid_2== &raquo; #{link_to 'Google+', 'https://plus.google.com/103058120108267752423/about', target: :blank}
-  .grid_2== &raquo; #{link_to 'Twitter', 'http://twitter.com/#!/wlcamp', target: :blank}
-  .grid_2== &raquo; #{link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank}
+%li.dropdown
+  %a.dropdown-toggle{'data-toggle' => 'dropdown'}
+    .unselectable 
+      News
+      %b.caret
+  %ul.dropdown-menu
+    %li=link_to 'Blog', 'http://wlcamp.blogspot.com', target: :blank
+    %li=link_to 'Calendar', '/news/calendar.html'
+    %li=link_to 'Photo Gallery', 'https://picasaweb.google.com/101625798794361011934?noredirect=1'
+    %li=link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
+    %li=link_to 'Google+', 'https://plus.google.com/103058120108267752423/about', target: :blank
+    %li=link_to 'Twitter', 'http://twitter.com/#!/wlcamp', target: :blank
+    %li=link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank

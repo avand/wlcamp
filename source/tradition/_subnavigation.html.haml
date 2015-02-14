@@ -1,7 +1,12 @@
-.container_12
-  .grid_2== &raquo; #{link_to_unless_current 'Braves', '/tradition/braves.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'History', '/tradition/history.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Our Mission', '/tradition/mission-statement.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Songs', '/tradition/songs.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Trustees', '/tradition/trustees.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Values', '/tradition/values.html'}
+%li.dropdown
+  %a.dropdown-toggle{'data-toggle' => 'dropdown'}
+    .unselectable 
+      Tradition
+      %b.caret
+  %ul.dropdown-menu
+    %li=link_to 'Braves', '/tradition/braves.html'
+    %li=link_to 'History', '/tradition/history.html'
+    %li=link_to 'Our Mission', '/tradition/mission-statement.html'
+    %li=link_to 'Songs', '/tradition/songs.html'
+    %li=link_to 'Trustees', '/tradition/trustees.html'
+    %li=link_to 'Values', '/tradition/values.html'

@@ -1,7 +1,12 @@
-.container_12
-  .grid_2== &raquo; #{link_to_unless_current 'Alumni Camp', '/alumni/alumni-camp.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Centennial', '/alumni/centennial-celebration.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Charitable Giving', '/alumni/charitable-giving.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Lost Larrys', '/alumni/lost-larrys.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'WLC vs. FDL', '/alumni/wlc-vs-fdl.html'}
-  .grid_2== &raquo; #{link_to_unless_current 'Plaques', '/alumni/plaques.html'}
+%li.dropdown
+  %a.dropdown-toggle{'data-toggle' => 'dropdown'}
+    .unselectable 
+      Alumni
+      %b.caret
+  %ul.dropdown-menu
+    %li=link_to 'Alumni Camp', '/alumni/alumni-camp.html'
+    %li=link_to 'Centennial', '/alumni/centennial-celebration.html'
+    %li=link_to 'Charitable Giving', '/alumni/charitable-giving.html'
+    %li=link_to 'Lost Larrys', '/alumni/lost-larrys.html'
+    %li=link_to 'WLC vs. FDL', '/alumni/wlc-vs-fdl.html'
+    %li=link_to 'Plaques', '/alumni/plaques.html'

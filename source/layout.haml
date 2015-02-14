@@ -9,6 +9,7 @@
     %meta{ :name => "author", :content => "" }/
     %meta{ :name => "keywords", :content => "boys overnight summer camp, summer camp, traditional camp, traditional overnight camp, new hampshire summer camps, new hampshire summer camp, summer camps in new hampshire, summer camp new hampshire, summer camps new hampshire, summer camp in new hampshire, overnight summer camps in new hampshire, new hampshire boy camps, boy camps new hampshire" }/
 
+
     - background = request.path.gsub('.html', '.jpg')
     %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
 
@@ -18,9 +19,15 @@
     %meta{ :name => "og:site_name", :content => "William Lawrence Camp - Do Something. This Summer!" }
 
     -# CSS: implied media="all"
+    %link{ :href => "/stylesheets/bootstrap.min.css", :media => "all", :rel => "stylesheet" }/
+    
+
     %link{ :href => "/stylesheets/reset.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/stylesheets/grid.css?v=1", :media => "all", :rel => "stylesheet" }/
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "/stylesheets/unselectable.css?v=1", :media => "all", :rel => "stylesheet" }/
+
+
 
     %script{ :src => '/javascripts/libs/modernizr-2.0.6.custom.min.js' }
 
@@ -39,32 +46,23 @@
         _gs('GSN-575327-Q');
 
   %body
-    #wrap
-      #header
-        .container_12
-          .grid_3
-            %h1= link_to 'William Lawrence Camp', '/'
-          .grid_9
-            %ul
-              %li.menu-item.last{ :'data-name' => 'contact' }= link_to 'Contact', '/contact.html'
-              %li.menu-item{ :'data-name' => 'news' } News
-              %li.menu-item{ :'data-name' => 'tradition' } Tradition
-              %li.menu-item{ :'data-name' => 'alumni' } Alumni
-              %li.menu-item{ :'data-name' => 'parents' } Parents
-              %li.menu-item{ :'data-name' => 'campers' } Campers
-              %li.menu-item{ :'data-name' => 'tour' } Tour
-      - ['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
-        .nav{ class: 'subnavigation', id: section }= partial "#{section}/subnavigation"
-      #main
-        .container_12
-          #flash-detect.grid_12
-            %p
-              Unfortunately to watch our videos you&rsquo;ll need to install Flash.
-              = link_to 'Install Flash now.', 'http://get.adobe.com/flashplayer/', target: :blank
-          = yield
+    .navbar.navbar-inverse.navbar-fixed-top{:role=>"navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+          = link_to 'William Lawrence Camp', '/', class: 'navbar-brand'
+        %div.collapse.navbar-collapse.navbar-ex1-collapse
+          %ul.nav.navbar-nav.navbar-right
+            -['tour', 'campers', 'parents', 'alumni', 'tradition', 'news'].each do |section|
+              = partial "#{section}/subnavigation"
+            %li= link_to 'Contact', '/contact.html'
+    .container
+      = yield
     #footer
       .container_12
-        .grid_12.sans-serif
+        .col-xs-12.sans-serif
           .social
             %span.facebook= link_to 'Staff', '/staff.html', target: :blank
             &nbsp;&middot;&nbsp;
@@ -86,15 +84,15 @@
             &copy; William Lawrence Camp,
             = Time.now.year
 
-    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" }
+    %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
+    %script{:src=>'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'}
     %script{ :src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" }
-    :javascript
-      window.jQuery || document.write("<script src='/javascripts/libs/jquery-1.7.1.min.js'>\x3C/script>")
     %script{ :src => '/javascripts/libs/jquery.backstretch.min.js' }
     %script{ :src => '/javascripts/libs/jquery.cycle.lite.js' }
     %script{ :src => '/javascripts/libs/jquery.easing.js' }
     %script{ :src => '/javascripts/libs/flash-detect.min.js' }
     %script{ :src => '/javascripts/custom.js' }
+
 
     :javascript
       if (!Modernizr.video && !FlashDetect.installed){
