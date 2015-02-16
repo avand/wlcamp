@@ -117,6 +117,6 @@ helpers do
     when 12 then 536
     end
 
-    %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0" width="#{width}" height="#{height}" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe>}
+    %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0"></iframe>}
   end
 end
