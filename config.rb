@@ -106,16 +106,8 @@ helpers do
     super name, (ENV["RACK_ENV"] == "production" && !(path =~ /^http/) ? path.gsub(".html", "") : path), options
   end
 
+ # Columns depricated
   def vimeo(id, columns)
-    column_width = 76
-
-    width = columns * column_width
-    height = case columns
-    when 5  then 282
-    when 6  then 324
-    when 7  then 368
-    when 12 then 536
-    end
 
     %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0"></iframe>}
   end
