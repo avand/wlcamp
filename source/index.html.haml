@@ -27,76 +27,146 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
       you can feel confident that your boy will have a summer
       which he will remember for the rest of his life &mdash; full of fun, friendship and new skills!
 
-.col-md-6.col-sm-12.col-centered
+.col-md-6.col-sm-12
   .do-something
-    .play
-      %ul.somethings.permanent-marker
-        %li.canoe-a-river Canoe a River
-        %li.climb-a-wall Climb a Wall
-        %li.hike-a-mountain Hike a Mountain
-        %li.work-with-wood Work with Wood
-        %li.sing-a-song Sing a Song
-        %li.yell-a-chant Yell a Chant
-        %li.play-a-game Play a Game
-        %li.run-a-race Run a Race
-        %li.build-a-fire Build a Fire
-        %li.swing-a-bat Swing a Bat
-        %li.kick-a-ball Kick a Ball
-        %li.shoot-some-hoops Shoot Some Hoops
-        %li.fire-at-a-target Fire at a Target
-        %li.jump-in-a-lake Jump in a Lake
-        %li.waterski Waterski
-        %li.sail-a-boat Sail a Boat
-        %li.conquer-your-fear Conquer Your Fear
-        %li.make-a-friend Make a Friend
-        %li.defeat-an-obstacle Defeat an Obstacle
-        %li.solve-a-problem Solve a Problem
-        %li.earn-an-award Earn a Award
-        %li.have-some-fun Have Some Fun
-        %li.join-a-team Join a Team
-        %li.build-something Build Something
-        %li.discover-something Discover Something
-        %li.win-something Win Something
-    .slideshow
-      %img.rounded.shadow{ src: '/images/home/canoe-a-river.jpg', alt: 'canoe-a-river', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/climb-a-wall.jpg', alt: 'climb-a-wall', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/hike-a-mountain.jpg', alt: 'hike-a-mountain', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/work-with-wood.jpg', alt: 'work-with-wood', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/sing-a-song.jpg', alt: 'sing-a-song', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/yell-a-chant.jpg', alt: 'yell-a-chant', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/play-a-game.jpg', alt: 'play-a-game', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/run-a-race.jpg', alt: 'run-a-race', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/build-a-fire.jpg', alt: 'build-a-fire', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/swing-a-bat.jpg', alt: 'swing-a-bat', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/kick-a-ball.jpg', alt: 'kick-a-ball', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/shoot-some-hoops.jpg', alt: 'shoot-some-hoops', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/fire-at-a-target.jpg', alt: 'fire-at-a-target', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/jump-in-a-lake.jpg', alt: 'jump-in-a-lake', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/waterski.jpg', alt: 'waterski', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/sail-a-boat.jpg', alt: 'sail-a-boat', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/conquer-your-fear.jpg', alt: 'conquer-your-fear', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/make-a-friend.jpg', alt: 'make-a-friend', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/defeat-an-obstacle.jpg', alt: 'defeat-an-obstacle', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/solve-a-problem.jpg', alt: 'solve-a-problem', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/earn-an-award.jpg', alt: 'earn-an-award', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/have-some-fun.jpg', alt: 'have-some-fun', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/join-a-team.jpg', alt: 'join-a-team', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/build-something.jpg', alt: 'build-something', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/discover-something.jpg', alt: 'discover-something', width: 460, height: 330 }
-      %img.rounded.shadow{ src: '/images/home/win-something.jpg', alt: 'win-something', width: 460, height: 330 }
-    .shadow.rounded.embed-responsive.embed-responsive.embed-responsive-16by9.video
+    .col-xs-12
+      .carousel.slide{:id=>"slide-images", :data => {:ride => "carousel"}}
+        .carousel-inner
+          .item.active
+            %img{ src: '/images/home/canoe-a-river.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Canoe a River
+          .item
+            %img{ src: '/images/home/climb-a-wall.jpg' }
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Climb a Wall
+          .item
+            %img{ src: '/images/home/hike-a-mountain.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Hike a Mountain
+          .item
+            %img{ src: '/images/home/work-with-wood.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Work with Wood
+          .item
+            %img{ src: '/images/home/sing-a-song.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Sing a Song
+          .item
+            %img{ src: '/images/home/yell-a-chant.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Yell a Chant
+          .item
+            %img{ src: '/images/home/play-a-game.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Play a Game
+          .item
+            %img{ src: '/images/home/run-a-race.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Run a Race
+          .item
+            %img{ src: '/images/home/build-a-fire.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Build a Fire
+          .item
+            %img{ src: '/images/home/swing-a-bat.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Swing a Bat
+          .item
+            %img{ src: '/images/home/kick-a-ball.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Kick a Ball
+          .item
+            %img{ src: '/images/home/shoot-some-hoops.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Shoot Some Hoops
+          .item
+            %img{ src: '/images/home/fire-at-a-target.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Fire at a Target
+          .item
+            %img{ src: '/images/home/jump-in-a-lake.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Jump in a Lake
+          .item
+            %img{ src: '/images/home/waterski.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Waterski
+          .item
+            %img{ src: '/images/home/sail-a-boat.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Sail a Boat
+          .item
+            %img{ src: '/images/home/conquer-your-fear.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Conquer your Fear
+          .item
+            %img{ src: '/images/home/make-a-friend.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Make a Friend
+          .item
+            %img{ src: '/images/home/defeat-an-obstacle.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Defeat an Obstacle
+          .item
+            %img{ src: '/images/home/solve-a-problem.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Solve a Problem
+          .item
+            %img{ src: '/images/home/earn-an-award.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Earn an Award
+          .item
+            %img{ src: '/images/home/have-some-fun.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Have Some Fun
+          .item
+            %img{ src: '/images/home/join-a-team.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Join a Team
+          .item
+            %img{ src: '/images/home/build-something.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Build Something
+          .item
+            %img{ src: '/images/home/discover-something.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Discover Something
+          .item
+            %img{ src: '/images/home/win-something.jpg'}
+            .container
+              .carousel-caption.carasol-iner
+                %h4 Win Something
+        %a.left.carousel-control{:href => "#slide-images", :data => {:slide => "prev"}}
+          %span.glyphicon.glyphicon-chevron-left
+        %a.right.carousel-control{:href => "#slide-images", :data => {:slide => "next"}}
+          %span.glyphicon.glyphicon-chevron-right{:color => "white"}
+    //.shadow.rounded.embed-responsive.embed-responsive.embed-responsive-4by3.video= vimeo 33915926, 6
 
 = partial "./shared/trifecta"
-- content_for :scripts do
-  :javascript
-    $(document).ready(function() {
-      $(".play").click(function() {
-        $(".slideshow, .play").hide();
-        $(".do-something .video").show().html('#{vimeo 33915926, 6}');
-      })
 
-      $('.slideshow').cycle({ speed: 700, timeout: 4000, before: function() {
-        $(".somethings li").hide();
-        $(".somethings ." + this.alt).show();
-      } });
-    })
