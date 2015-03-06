@@ -23,11 +23,8 @@ html
     width: 0
     margin-top: -32767px
 
-  body, .bitter
+  body
     font: 15px / 22px "Bitter", Georgia, serif
-
-  .bitter-italic
-    font-family: 'Bitter I'
 
   .permanent-marker
     font-family: 'Permanent Marker', cursive
@@ -86,74 +83,6 @@ html
     background: rgba(255, 255, 255, 0.8)
     margin-bottom: 22px
 
-  #header, .subnavigation
-    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7)
-    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7)
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7)
-    position: fixed
-    left: 0
-    right: 0
-
-  #header
-    background: #000075
-    background: -moz-linear-gradient(top, #16218c, #000075)
-    background: -o-linear-gradient(top, #16218c, #000075)
-    background: -webkit-gradient(linear, left top, left bottom, from(#16218c), to(#000075))
-    background: linear-gradient(top, #16218c, #000075)
-    text-shadow: 0 -1px 0 black
-    top: 0
-    height: 44px
-    z-index: 101
-    a
-      display: block
-      color: white
-      text-decoration: none
-      &:link, &:visited
-        color: white
-        text-decoration: none
-      &:hover
-        text-decoration: underline
-    ul
-      color: #F8F8F8
-      list-style: none
-      padding-left: 0
-      li
-        float: right
-        padding-left: 20px
-        padding-right: 20px
-        cursor: pointer
-        line-height: 44px
-        &:hover
-          text-decoration: none
-    h1
-      color: #F8F8F8
-      font-size: 16px
-      line-height: 42px
-    .grid_3
-      position: relative
-    #centennial
-      position: absolute
-      top: 37px
-      left: 19px
-      height: 22px
-      width: 163px
-      z-index: 102
-      .banner
-        font-size: 11px
-        background: url('/images/centennial-banner.png') no-repeat center center
-        height: 22px
-        text-align: center
-        line-height: 20px
-        a
-          color: #351400
-          text-shadow: 0 1px 0 #FFF7CA
-          text-decoration: none
-          &:visited, &:link
-            color: #351400
-            text-shadow: 0 1px 0 #FFF7CA
-            text-decoration: none
-          &:hover
-            text-decoration: underline
 
   #footer_custom
     font-size: 11px
@@ -181,14 +110,6 @@ html
     address_custom
       font-style: normal
 
-
-  .first
-    margin-left: 0 !important
-    padding-left: 0 !important
-
-  .last
-    margin-right: 0 !important
-    padding-right: 0 !important
 
   #wrap
     min-height: 100%
@@ -255,9 +176,6 @@ html
     opacity: 0.7
     z-index: 50
     cursor: pointer
-  .video
-    display: none
-    margin: 0
 
   .tagline-and-countdown
     margin: 11px 0 55px
@@ -289,3 +207,19 @@ html
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
     color: #000f60
     font-size: 20px
+
+.unselectable 
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  cursor: default
+
+
+.col-centered 
+  display: inline-block
+  float: none
+  text-align: center
+  margin: 0 auto
