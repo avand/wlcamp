@@ -80,11 +80,10 @@ configure :build do
 
   activate :minify_html
 
-  activate :asset_hash
-
   # Use relative URLs
   # activate :relative_assets
 
+  activate :cache_buster
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
@@ -109,7 +108,6 @@ helpers do
 
  # Columns depricated
   def vimeo(id, columns)
-
     %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0"></iframe>}
   end
 end
