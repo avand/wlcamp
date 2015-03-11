@@ -77,10 +77,8 @@
             .avand
               Website lovingly crafted by
               == #{link_to 'Avand Amiri', 'http://avandamiri.com'}, Bill Larry Boy &amp; Brave
-            .row
-              .col-xs-3
-              .col-xs-6
-                =link_to image_tag('/images/footer/ACA-logo.png', width:"40"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
+            
+            =link_to image_tag('/images/footer/ACA-logo.png', width:"40"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
           .col-sm-3.col-xs-12
             =partial "./shared/mailchimp_advertising"
     %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
