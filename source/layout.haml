@@ -63,21 +63,24 @@
         .row
           .col-sm-3.col-xs-4
             %p= link_to 'Staff', '/staff.html', target: :blank
-            %p= link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
             %p= link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
+            %p= link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
             %p= link_to 'Contact Us', '/connect/contact.html'
             %p= link_to 'Stay Informed', '/connect/mailing-list'
           .col-sm-6.col-xs-8
-            %address_custom{ style: 'display block' }
-              = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
-          
             %p 603-569-3698
-            .avand
-              Website lovingly crafted by
-              == #{link_to 'Avand Amiri', 'http://avandamiri.com'}, Bill Larry Boy &amp; Brave
             .copyright
               &copy; William Lawrence Camp,
               = Time.now.year
+            %address_custom{ style: 'display block' }
+              = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
+            .avand
+              Website lovingly crafted by
+              == #{link_to 'Avand Amiri', 'http://avandamiri.com'}, Bill Larry Boy &amp; Brave
+            .row
+              .col-xs-3
+              .col-xs-6
+                =link_to image_tag('/images/footer/ACA-logo.png', width:"40"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
           .col-sm-3.col-xs-12
             =partial "./shared/mailchimp_advertising"
     %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
