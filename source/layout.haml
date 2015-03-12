@@ -42,13 +42,11 @@
         _gs('GSN-575327-Q');
 
   %body{ :style => "background-color:transparent;"}
-    .navbar.navbar-inverse.navbar-fixed-top{:role=>"navigation"}
+    .navbar.navbar-fixed-top{:role=>"navigation"}
       .container
         .navbar-header
           %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
             Menu
-            %span.sr-only Toggle navigation
-            
           = link_to 'William Lawrence Camp', '/', class: 'navbar-brand'
         %div.collapse.navbar-collapse.navbar-ex1-collapse
           %ul.nav.navbar-nav.navbar-right
