@@ -60,23 +60,28 @@
     #footer_custom
       .container
         .row
-          .col-sm-3.col-xs-4
-            %p= link_to 'Staff', '/staff.html', target: :blank
-            %p= link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
-            %p= link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
-            %p= link_to 'Contact Us', '/connect/contact.html'
-            %p= link_to 'Stay Informed', '/connect/mailing-list'
-          .col-sm-6.col-xs-8
-            %p 603-569-3698
-            .copyright
-              &copy; William Lawrence Camp,
-              = Time.now.year
-            %address_custom{ style: 'display block' }
-              = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
-            .avand
-              Website lovingly crafted by
-              == #{link_to 'Avand Amiri', 'http://avandamiri.com'}, Bill Larry Boy &amp; Brave
-            
+          .col-sm-9.col-xs-12
+            %p
+              %span= link_to 'Staff', '/staff.html', target: :blank
+              &nbsp;&middot;&nbsp;
+              %span= link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
+              &nbsp;&middot;&nbsp;
+              %span= link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
+              &nbsp;&middot;&nbsp;
+              %span= link_to 'Contact Us', '/connect/contact.html'
+              &nbsp;&middot;&nbsp;
+              603-569-3698
+            %p
+              %address_custom{ style: 'display block' }
+                = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
+            %p
+              Website built and maintained by 
+              == #{link_to 'Avand A.', 'http://avandamiri.com'}  (Bill Larry Boy & Brave) and 
+              Erik H. (Bill Larry Man)
+            %p
+              .copyright
+                &copy; William Lawrence Camp,
+                = Time.now.year
             =link_to image_tag('/images/footer/ACA-logo.png', width:"40"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
           .col-sm-3.col-xs-12
             =partial "./shared/mailchimp_advertising"
