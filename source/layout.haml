@@ -54,6 +54,7 @@
             %li=link_to  'Enroll Here', '/enroll.html', {:style=>'color: yellow;font-weight: bold;'}
             -['tour', 'campers', 'parents', 'tradition', 'news', 'connect'].each do |section|
               = partial "#{section}/subnavigation"
+        
 
     / Google Tag Manager
     %noscript
@@ -72,31 +73,36 @@
     #footer_custom
       .container
         .row
-          .col-sm-9.col-xs-12
-            %p
-              %span= link_to 'Staff', '/staff.html', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span= link_to 'YouTube', 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span= link_to 'Facebook', 'http://facebook.com/williamlawrencecamp', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span= link_to 'Contact Us', '/connect/contact.html'
-              &nbsp;&middot;&nbsp;
-              603-569-3698
+          .col-sm-4.col-sm-push-8.col-xs-12
+            =partial "./shared/mailchimp_advertising"
+          .col-sm-8.col-sm-pull-4.col-xs-12
+            .social
+              =link_to image_tag('/images/footer/facebook.png', height: "48"), 'http://facebook.com/williamlawrencecamp', target: :blank
+              =link_to image_tag('/images/footer/youtube.png', height: "48"), 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
+              =link_to image_tag('/images/footer/instagram.png', height: "48"), 'https://instagram.com/williamlawrencecamp/', target: :blank
+              =link_to image_tag('/images/footer/twitter.png', height: "48"), 'https://twitter.com/wlcamp', target: :blank
+              =link_to image_tag('/images/footer/Google-plus.png', height: "48"), 'https://plus.google.com/103058120108267752423/about', target: :blank
+              =link_to image_tag('/images/footer/ACA-logo.png', height:"48"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
             %p
               %address_custom{ style: 'display block' }
                 = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
             %p
-              Website built and maintained by 
-              == #{link_to 'Avand A.', 'http://avandamiri.com'}  (Bill Larry Boy & Brave) and 
-              Erik H. (Bill Larry Man)
+              %span= link_to 'Staff', '/staff.html', target: :blank
+              &nbsp;&middot;&nbsp;
+              %span= link_to 'Contact Us', '/connect/contact.html'
+              &nbsp;&middot;&nbsp;
+              %span= mail_to 'knoll@wlcamp.org', 'knoll@wlcamp.org'
+              &nbsp;&middot;&nbsp;
+              603-569-3698
             %p
               .copyright
                 &copy; William Lawrence Camp,
                 = Time.now.year
-            =link_to image_tag('/images/footer/ACA-logo.png', width:"40"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
-          .col-sm-3.col-xs-12
-            =partial "./shared/mailchimp_advertising"
+            %p
+              Webmasters and alumni 
+              == #{link_to 'Avand A.', 'http://avandamiri.com'} and 
+              Erik H.
+          
     %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
     %script{:src=>'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'}
     %script{ :src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" }
