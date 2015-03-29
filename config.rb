@@ -73,17 +73,17 @@
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
-  # Enable cache buster
-  # activate :cache_buster
+  activate :minify_html
 
   # Use relative URLs
   # activate :relative_assets
 
+  activate :cache_buster
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
@@ -106,17 +106,8 @@ helpers do
     super name, (ENV["RACK_ENV"] == "production" && !(path =~ /^http/) ? path.gsub(".html", "") : path), options
   end
 
+ # Columns depricated
   def vimeo(id, columns)
-    column_width = 76
-
-    width = columns * column_width
-    height = case columns
-    when 5  then 282
-    when 6  then 324
-    when 7  then 368
-    when 12 then 536
-    end
-
-    %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0" width="#{width}" height="#{height}" frameBorder="0" webkitAllowFullScreen allowFullScreen mozallowfullscreen></iframe>}
+    %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0"></iframe>}
   end
 end
