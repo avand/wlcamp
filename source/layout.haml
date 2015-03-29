@@ -21,7 +21,7 @@
 
     -# CSS: implied media="all"
     %link{ :href => "/stylesheets/bootstrap.min.css", :media => "all", :rel => "stylesheet" }/
-    
+
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
 
 
@@ -33,6 +33,7 @@
     <![endif]-->
 
     - if ENV["RACK_ENV"] == "production"
+      / GoSquared Analytics
       :javascript
         !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
         arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
@@ -41,8 +42,27 @@
 
         _gs('GSN-575327-Q');
 
+      / Google Analytics
+      :javascript
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-739599-6', 'auto');
+        ga('send', 'pageview');
 
   %body{ :style => "background-color:transparent;"}
+    / Google Tag Manager
+    %noscript
+      %iframe{ src: '//www.googletagmanager.com/ns.html?id=GTM-K4PR7R', style: 'display: none; visibility; hidden', height: 0, width: 0 }
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K4PR7R');
+
     .navbar.navbar-fixed-top{:role=>"navigation"}
       .container
         .navbar-header
@@ -54,17 +74,6 @@
             %li=link_to  'Enroll Here', '/enroll.html', {:style=>'color: yellow;font-weight: bold;'}
             -['tour', 'campers', 'parents', 'tradition', 'news', 'connect'].each do |section|
               = partial "#{section}/subnavigation"
-        
-
-    / Google Tag Manager
-    %noscript
-      %iframe{ src: '//www.googletagmanager.com/ns.html?id=GTM-K4PR7R', style: 'display: none; visibility; hidden', height: 0, width: 0 }
-    :javascript
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-K4PR7R');
 
     #wrap
       #main
@@ -99,10 +108,10 @@
                 &copy; William Lawrence Camp,
                 = Time.now.year
             %p
-              Webmasters and alumni 
-              == #{link_to 'Avand A.', 'http://avandamiri.com'} and 
+              Webmasters and alumni
+              == #{link_to 'Avand A.', 'http://avandamiri.com'} and
               Erik H.
-          
+
     %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
     %script{:src=>'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'}
     %script{ :src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" }
@@ -110,6 +119,3 @@
     %script{ :src => '/javascripts/custom.js' }
 
     = yield_content :scripts
-
-    - if ENV["RACK_ENV"] != "production"
-      %script{ :src => "/javascripts/960gridder.js" }
