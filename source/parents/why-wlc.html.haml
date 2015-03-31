@@ -35,9 +35,23 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
       %p
         William Lawrence is a high-quality, reasonably-priced organization that
         prepares boys for their futures as men.
-    
 
+:javascript
+  (function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
+    }
+    _fbq.push(['addPixelId', '459463980868593']);
+  })();
 
-  
+  window._fbq = window._fbq || [];
+  window._fbq.push(['track', 'PixelInitialized', {}]);
 
-
+%noscript
+  %img{ :height => 1, :width => 1, :style => "display:none", :src => "https://www.facebook.com/tr?id=459463980868593&amp;ev=PixelInitialized" }
