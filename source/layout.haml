@@ -72,7 +72,7 @@
         %div.collapse.navbar-collapse.navbar-ex1-collapse
           %ul.nav.navbar-nav.navbar-right
             %li=link_to  'Enroll Here', '/enroll.html', {:style=>'color: yellow;font-weight: bold;'}
-            -['tour', 'campers', 'parents', 'tradition', 'news', 'connect'].each do |section|
+            -['tour', 'campers', 'parents', 'tradition', 'news', 'contact-us'].each do |section|
               = partial "#{section}/subnavigation"
 
     #wrap
@@ -98,7 +98,7 @@
             %p
               %span= link_to 'Staff', '/staff.html', target: :blank
               &nbsp;&middot;&nbsp;
-              %span= link_to 'Contact Us', '/connect/contact.html'
+              %span= link_to 'Contact Us', '/contact-us/contact.html'
               &nbsp;&middot;&nbsp;
               %span= mail_to 'knoll@wlcamp.org', 'knoll@wlcamp.org'
               &nbsp;&middot;&nbsp;
