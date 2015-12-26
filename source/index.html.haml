@@ -3,12 +3,24 @@ title: "William Lawrence Camp | Traditional Boys Overnight Summer Camp in New Ha
 description: "William Lawrence Camp is a traditional overnight summer camp for boys in Center Tuftonboro, New Hampshire.  William Lawrence Summer Camp is a wonderful place for boys to learn and grow in a fun and exciting environment.  Boys can participate in traditional camp activities such as sports, projects, hiking and canoeing trips, sailing, waterskiing, climbing, swimming, kayaking, archery, shooting, and just having fun."
 ---
 
-.row
-  .col-xs-12
+.row.visible-lg.visible-md
+  .col-md-10.col-md-push-2.col-xs-12
     .tagline-and-countdown
       .tagline.permanent-marker Do Something This Summer!
       .countdown.permanent-marker= javascript_include_tag '/javascripts/libs/countdown'
-
+  .col-md-2.col-md-pull-9
+    %a{href: "/parents/enrollment-information.html"}
+      %img{src: '/images/promotion/wlc_vest_promotion.png'}
+.visible-sm.visible-xs
+  .row
+    .col-xs-12
+      .tagline-and-countdown
+        .tagline.permanent-marker Do Something This Summer!
+        .countdown.permanent-marker= javascript_include_tag '/javascripts/libs/countdown'
+  .row
+    .col-sm-4.col-sm-push-4.col-xs-6.col-xs-push-3
+      %a{href: "/parents/enrollment-information.html"}
+        %img{src: '/images/promotion/wlc_vest_promotion.png'}
 .row
   .col-md-6.col-sm-12.col-xs-12
     .liner.shadow.rounded
