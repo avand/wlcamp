@@ -1,11 +1,18 @@
 Now            = new Date();
-TargetDate2013 = new Date(2013, 5, 23, 10, 00, 00, 00);
-TargetDate2014 = new Date(2014, 5, 29, 10, 00, 00, 00);
-TargetDate2015 = new Date(2015, 5, 28, 10, 00, 00, 00);
 
-if (Now < TargetDate2013) { TargetDate = TargetDate2013; } else
-if (Now < TargetDate2014) { TargetDate = TargetDate2014; } else
-if (Now < TargetDate2015) { TargetDate = TargetDate2015; }
+targetDates=[
+  new Date(2013, 5, 23, 10, 00, 00, 00),
+  new Date(2014, 5, 29, 10, 00, 00, 00),
+  new Date(2015, 5, 28, 10, 00, 00, 00),
+  new Date(2016, 5, 26, 10, 00, 00, 00)
+];
+
+for(i=0; i<targetDates.length;i++){
+  if(Now<targetDates[i]){
+    TargetDate=targetDates[i];
+    break;
+  }
+}
 
 CountActive   = true;
 CountStepper  = -1;
