@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
+    %link{ :href => 'https://fonts.googleapis.com/css?family=Amatic+SC:700|Lato:400,400i,700', :rel => 'stylesheet', :type => 'text/css' }/
 
     %meta{ :charset => "utf-8" }/
     %title= data.page.title
@@ -70,9 +70,11 @@
               = partial "#{section}/subnavigation"
 
     #wrap
+      = yield_content :premain
       #main
         .container
           = yield
+
     #footer_custom
       .container
         .row
