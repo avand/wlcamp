@@ -12,7 +12,10 @@
 
 
     - background = request.path.gsub('.html', '.jpg')
-    %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
+    - background_path = "source/images/backgrounds/#{background}.jpg"
+    - if File.exists?(background_path)
+      - raise background_path.inspect
+      %meta{ :name => "background", :content => "/images/backgrounds/#{background_path}" }
 
     %meta{ :name => "og:type", :content => "website" }
     %meta{ :name => "og:title", :content => data.page.title }

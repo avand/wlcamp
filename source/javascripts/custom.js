@@ -1,6 +1,9 @@
 var centennialBanner = null;
 
-$.backstretch($('meta[name=background]').attr('content'), {
-  speed: 600, centeredX: false, centeredY: false
-});
+var background = $('meta[name=background]').attr('content');
 
+if (background) {
+  $.backstretch(background, {
+    speed: 600, centeredX: false, centeredY: false
+  });
+}
