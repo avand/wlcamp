@@ -74,9 +74,11 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
   .modal-dialog
     .modal-content
       .modal-body
-        %iframe{ width: "560", height: "315", src: "https://www.youtube.com/embed/bw0tM7kj4fs", frameborder: "0", allowfullscreen: true }
+        .promo-video-container
+          %iframe.promo-video{ src: "https://www.youtube.com/embed/bw0tM7kj4fs", frameborder: "0", allowfullscreen: true }
 
 - content_for :scripts do
   :javascript
+    // https://developers.google.com/youtube/iframe_api_reference
     // Modal open: play
     // Modal close: pause
