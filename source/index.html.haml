@@ -6,7 +6,7 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
 - content_for :premain do
   .hero-container
     .hero-content
-      %a{ href: "#", data: { toggle: "modal", target: "#video" } }
+      %a{ href: "#", data: { toggle: "modal", target: "#promo-video-modal" } }
         %img.play{ src: "images/home/play.png", height: 50, width: 50 }
       .tagline.amatic Discover Summer
 
@@ -70,15 +70,17 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
         %a{ href: "#", class: "btn btn-primary" } Explore the Fun!
 
 
-#video.modal.fade
+#promo-video-modal.modal.fade
   .modal-dialog
     .modal-content
-      .modal-body
-        .promo-video-container
-          %iframe.promo-video{ src: "https://www.youtube.com/embed/bw0tM7kj4fs", frameborder: "0", allowfullscreen: true }
+      .modal-header
+        %button{ type: "button", class: "close", data: { dismiss: "modal" }, 'aria-label' => "Close" }
+          %span{ 'aria-hidden' => true }
+            &times;
+        %h4 Discover Summer
 
-- content_for :scripts do
-  :javascript
-    // https://developers.google.com/youtube/iframe_api_reference
-    // Modal open: play
-    // Modal close: pause
+      .modal-body
+        #promo-video-container
+          #promo-video
+
+%script{ :src => 'javascripts/homepage-hero-video.js' }
