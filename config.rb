@@ -107,7 +107,12 @@ helpers do
   end
 
  # Columns depricated
-  def vimeo(id, columns)
-    %Q{<iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0"></iframe>}
+  def vimeo(id, columns = nil)
+    <<-HTML
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0" class="embed-responsive-item">
+        </iframe>
+      </div>
+    HTML
   end
 end
