@@ -10,7 +10,6 @@
     %meta{ :name => "keywords", :content => "boys overnight summer camp, summer camp, traditional camp, traditional overnight camp, new hampshire summer camps, new hampshire summer camp, summer camps in new hampshire, summer camp new hampshire, summer camps new hampshire, summer camp in new hampshire, overnight summer camps in new hampshire, new hampshire boy camps, boy camps new hampshire" }/
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"}
 
-
     - background = request.path.gsub('.html', '.jpg')
     - background_path = "source/images/backgrounds/#{background}.jpg"
     - if File.exists?(background_path)
@@ -27,6 +26,7 @@
 
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
 
+    %link{ href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", media: "all", rel: "stylesheet" }
 
     %script{ :src => '/javascripts/libs/modernizr-2.0.6.custom.min.js' }
 
@@ -83,13 +83,12 @@
           .col-sm-4.col-sm-push-8.col-xs-12
             =partial "./shared/mailchimp_advertising"
           .col-sm-8.col-sm-pull-4.col-xs-12
-            .social
-              =link_to image_tag('/images/footer/facebook.png', height: "48"), 'http://facebook.com/williamlawrencecamp', target: :blank
-              =link_to image_tag('/images/footer/youtube.png', height: "48"), 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
-              =link_to image_tag('/images/footer/instagram.png', height: "48"), 'https://instagram.com/williamlawrencecamp/', target: :blank
-              =link_to image_tag('/images/footer/twitter.png', height: "48"), 'https://twitter.com/wlcamp', target: :blank
-              =link_to image_tag('/images/footer/Google-plus.png', height: "48"), 'https://plus.google.com/103058120108267752423/about', target: :blank
-              =link_to image_tag('/images/footer/ACA-logo.png', height:"48"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
+            .social{ style: "font-size: 2em;" }
+              = link_to('<i class="fa fa-facebook-square"></i>', 'https://facebook.com/williamlawrencecamp', target: :blank)
+              = link_to('<i class="fa fa-youtube-square"></i>', 'https://www.youtube.com/user/WilliamLawrenceCamp', target: :blank)
+              = link_to('<i class="fa fa-instagram"></i>', 'https://instagram.com/williamlawrencecamp', target: :blank)
+              = link_to('<i class="fa fa-twitter-square"></i>', 'https://twitter.com/wlcamp', target: :blank)
+              = link_to('<i class="fa fa-google-plus-square"></i>', 'https://plus.google.com/103058120108267752423/about', target: :blank)
             %p
               %address_custom{ style: 'display block' }
                 = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
@@ -109,6 +108,10 @@
               Webmasters and alumni
               == #{link_to 'Avand A.', 'http://avandamiri.com'} and
               Erik H.
+        .row
+          .col-xs-12{ style: "text-align: center; margin-top: 20px;" }
+            = link_to image_tag('/images/footer/ACA-logo.png', style: "width: 100px; height: 60px;"), 'http://find.acacamps.org/camp_profile.php?camp_id=1569', style: "border: none;"
+
 
     %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
     %script{:src=>'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'}
