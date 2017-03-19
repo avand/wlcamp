@@ -77,38 +77,7 @@
         .container
           = yield
 
-    %footer
-      .container
-        .row
-          .col-sm-4.col-sm-push-8.col-xs-12
-            = partial "./shared/mailchimp"
-          .col-sm-8.col-sm-pull-4.col-xs-12
-            %p
-              %address_custom{ style: 'display block' }
-                = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
-            %p
-              %span= link_to 'Staff', '/staff.html', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span= link_to 'Contact Us', '/contact-us/contact.html'
-              &nbsp;&middot;&nbsp;
-              %span= mail_to 'knoll@wlcamp.org', 'knoll@wlcamp.org'
-              &nbsp;&middot;&nbsp;
-              603-569-3698
-            .social{ style: "font-size: 2em;" }
-              = link_to('<i class="fa fa-facebook-square"></i>', 'https://facebook.com/williamlawrencecamp', target: :blank)
-              = link_to('<i class="fa fa-youtube-square"></i>', 'https://www.youtube.com/user/WilliamLawrenceCamp', target: :blank)
-              = link_to('<i class="fa fa-instagram"></i>', 'https://instagram.com/williamlawrencecamp', target: :blank)
-              = link_to('<i class="fa fa-twitter-square"></i>', 'https://twitter.com/wlcamp', target: :blank)
-              = link_to('<i class="fa fa-google-plus-square"></i>', 'https://plus.google.com/103058120108267752423/about', target: :blank)
-        .row
-          .col-xs-12{ style: "text-align: center; margin-top: 1em;" }
-            = link_to image_tag('/images/footer/ACA-logo.png', style: "width: 100px; height: 60px; margin-bottom: 1em;"), 'http://find.acacamps.org/camp_profile.php?camp_id=1569', style: "border: none;"
-            %div{ style: "font-size: .8em" }
-              == &copy; William Lawrence Camp, #{Time.now.year}
-              %br/
-              Website built and maintained by alumni,
-              == #{link_to 'Avand', 'http://avandamiri.com'} and
-              Erik
+    = partial "shared/footer"
 
     %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
     %script{:src=>'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'}
