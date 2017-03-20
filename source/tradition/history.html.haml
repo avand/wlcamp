@@ -1,12 +1,14 @@
 ---
-title: "History: A century of experience | William Lawrence Camp"
+title: "History"
 description: "William Lawrence Camp is an organization that is over 100 years old and we are steeped in a rich and vivid history.  Going back to 1913, we have been a not-for-profit overnight camp for boys located on over 250 acres in beautiful New Hampshire.  We have been building character since 1913."
 ---
-.row
-  .col-sm-6
-    .liner.shadow.rounded
-      %h2 History of William Lawrence Camp
 
+%h1.page-heading.amatic
+  = current_page.data.title
+
+.liner.shadow.rounded
+  .row
+    .col-sm-6
       %p
         Founded in 1913, William Lawrence Camp is one of the oldest camps in the United States.
         An independent, not-for-profit organization, the camp grew out of an affiliation
@@ -30,15 +32,14 @@ description: "William Lawrence Camp is an organization that is over 100 years ol
         &ldquo;William Lawrence Camp provides a spirited, challenging and safe environment that
         promotes self-esteem and the physical, social and intellectual development of boys and young men.&rdquo;
       %p
-        == As a not-for-profit, the operation of the camp is supported by a #{link_to 'Board of Trustees', '/tradition/trustees.html'}.
+        == As a not-for-profit, the operation of the camp is supported by a #{link_to 'Board of Trustees', 'trustees.html'}.
         Through their commitment, strong enrollment and the support of many others,
         from current camper families to alumni and friends, the camp remains a vital place
         of learning for today&rsquo;s and tomorrow&rsquo;s youth and young men.
 
-  .col-sm-6
-    .shadow.rounded.embed-responsive.embed-responsive.embed-responsive-4by3.video= vimeo 31702718, 5
+    .col-sm-6
+      = vimeo 31702718
 
-    .liner.shadow.rounded
       %h2 Photo Albums
 
       %ul
@@ -46,7 +47,7 @@ description: "William Lawrence Camp is an organization that is over 100 years ol
         %li= link_to "The Pratt Years (1941, 1945 - 1968)", "https://www.dropbox.com/sh/lhoxe2mstybjyb5/9TQwlweXNB", target: "_blank"
         %li= link_to "The Interim & Jessup Years (1969 - 1992)", "https://www.dropbox.com/sh/sd77tk13uy92d2i/Gw6DYdQw8r", target: "_blank"
         %li= link_to "The Crane Years (1993 - Present)", "https://www.dropbox.com/sh/j82q5l4503at5oa/Hw12Q4upiH", target: "_blank"
-    .liner.shadow.rounded
+
       %h2 Plaques
 
       %ul
