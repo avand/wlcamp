@@ -1,15 +1,14 @@
 ---
-title: "Why WLC is the perfect overnight summer camp for your boy | William Lawrence Camp"
+title: "Why William Lawrence Camp?"
 description: "William Lawrence Camp is a traditional overnight summer camp for boys in Center Tuftonboro, New Hampshire. Why would you choose to send your child to William Lawrence Camp?  We are a not for profit, have a varied and high quality program, and have an amazing camper to staff ratio."
 ---
 
-.row
-  .col-sm-6
-    .shadow.rounded.embed-responsive.embed-responsive.embed-responsive-4by3.video= vimeo 33133327, 5
-  .col-sm-6
-    .liner.shadow.rounded
-      %h2 Why William Lawrence Camp?
+%h1.page-heading.amatic
+  = current_page.data.title
 
+.liner.shadow.rounded
+  .row
+    .col-sm-6.tour-description
       %p
         William Lawrence Camp is an independent, not-for-profit organization;
         our entire focus is on providing an extraordinary experience for your child
@@ -36,23 +35,5 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
       %p
         William Lawrence is a high-quality, reasonably-priced organization that
         prepares boys for their futures as men.
-
-:javascript
-  (function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-      var fbds = document.createElement('script');
-      fbds.async = true;
-      fbds.src = '//connect.facebook.net/en_US/fbds.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(fbds, s);
-      _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', '459463980868593']);
-  })();
-
-  window._fbq = window._fbq || [];
-  window._fbq.push(['track', 'PixelInitialized', {}]);
-
-%noscript
-  %img{ :height => 1, :width => 1, :style => "display:none", :src => "https://www.facebook.com/tr?id=459463980868593&amp;ev=PixelInitialized" }
+    .col-sm-6
+      = vimeo 33133327

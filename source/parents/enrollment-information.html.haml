@@ -1,17 +1,19 @@
 ---
-title: "Summer Camp Enrollment, Forms and Paperwork | William Lawrence Boys Camp"
+title: "Enrollment Information"
 description: "William Lawrence Camp is a traditional overnight summer camp for boys in Center Tuftonboro, New Hampshire. All the important forms required to apply and ensure that your child can have the best possible summer."
 ---
+
+%h1.page-heading.amatic
+  = current_page.data.title
 
 .row
   .col-md-6
     .liner.shadow.rounded
-      %h2 Enrollment Information
+      %h2 Camper Forms
 
       %p
         <em>All</em> forms below must be completed and received by us <em>by May 1st</em> to ensure that your son can attend Camp.
         The Camper Health History form is especially important.
-
 
       %ul
         %li= link_to 'Camper Enrollment Application', '/enroll.html', target: :blank
@@ -26,9 +28,11 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
         %li= link_to 'Huggins Treatment Permission Form', 'https://www.dropbox.com/s/jls5zheovmwmd2z/Huggins_treatment_permission_form.pdf?dl=1', target: :blank
         %li= link_to 'Parent Checklist', 'https://www.dropbox.com/s/egg9o1r4t1lvcue/Parent%20Checklist.pdf?dl=1', target: :blank
 
-
+    .liner.shadow.rounded
       %h2 Important Information
+
       %p Below are several documents that convey important information about your son's summer here at camp.  It is important that you review them carefully <em>prior</em> to attending camp.
+
       %ul
         %li= link_to 'Store Catalogue', 'https://www.dropbox.com/s/og87y9lh8mnulpv/store-catalog.pdf?dl=1', target: :blank
         %li= link_to 'Camper Behavior & Responsibilities', 'https://www.dropbox.com/s/gmjqq01nldxjxm3/Behavior%20Contract-Responsibilities.pdf?dl=1', target: :blank
@@ -36,6 +40,7 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
         %li= link_to 'Things You Need to Know', 'https://www.dropbox.com/s/gbvqgez4efjdyk9/Things%20You%20Need%20to%20Know.pdf?dl=1', target: :blank
         %li= link_to 'Letter to Parents from Nathaniel S. Crane, Executive Director', 'https://www.dropbox.com/s/t73gxftoztvy9ng/Parent%20Letter.pdf?dl=1', target: :blank
         %li= link_to 'Parent Guide', 'https://www.dropbox.com/s/g5v986ycqaj7e6z/Parents%27%20Guide.pdf?dl=1', target: :blank
+
       %p
         Do you have any questions? Not a problem, give our friendly staff a call at our camp office.
         We are happy to walk you through the process. Just call 603-569-3698.
@@ -56,5 +61,4 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
         %li= link_to 'Talking with Your Children About Sensitive Issues', '/downloads/forms/bob-ditter/sensitve-issues.pdf', target: :blank
         %li= link_to 'The Other Duffel Bag - Talking with Your Child about their First Time at Camp', '/downloads/forms/bob-ditter/the-other-duffle-bag.pdf', target: :blank
 
-      %p
-        = mail_to 'BobDitter1@aol.com', 'Email Bob Ditter'
+      = mail_to 'BobDitter1@aol.com', 'Email Bob Ditter', class: 'btn btn-primary'
