@@ -25,12 +25,9 @@ html
     line-height: inherit
     font-weight: 700
 
-  p, ul, table, img, .video
+  p, ul, table
     margin-top: 0
     margin-bottom: 20px
-
-  p:last-child, ul:last-child, table:last-child, img:last-child, .video:last-child
-    margin-bottom: 0
 
   iframe
     border: none
@@ -49,6 +46,10 @@ html
     background: white
     margin-bottom: 22px
     overflow: auto
+
+  @media (max-width: 500px)
+    .liner
+      padding: 1em 1.2em
 
   #wrap
     min-height: 100%
