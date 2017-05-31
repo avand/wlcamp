@@ -4,213 +4,169 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
 <url>
-  <loc>http://wlcamp.org/</loc>
+  <loc>https://www.wlcamp.org/</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/100-years</loc>
+  <loc>https://www.wlcamp.org/enroll</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/contact</loc>
+  <loc>https://www.wlcamp.org/tour</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/archery</loc>
+  <loc>https://www.wlcamp.org/campers</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/cabins</loc>
+  <loc>https://www.wlcamp.org/parents/dates-rates</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/challenge-course</loc>
+  <loc>https://www.wlcamp.org/parents/enrollment-information</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/craft-areas</loc>
+  <loc>https://www.wlcamp.org/parents/camper-care</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/dining-hall</loc>
+  <loc>https://www.wlcamp.org/parents/directions</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/farmhouse</loc>
+  <loc>https://www.wlcamp.org/parents/why-wlc</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/infirmary</loc>
+  <loc>https://www.wlcamp.org/parents/our-staff</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/outdoorsman-skills</loc>
+  <loc>https://www.wlcamp.org/parents/testimonials</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/riflery-skeet</loc>
+  <loc>https://www.wlcamp.org/parents/girls-camp</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/sports</loc>
+  <loc>https://www.wlcamp.org/tradition/alumni-camp</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/knoll</loc>
+  <loc>https://www.wlcamp.org/tradition/centennial</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/waterfront</loc>
+  <loc>https://www.wlcamp.org/tradition/charitable-giving</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tour/wilderness-trips</loc>
+  <loc>https://www.wlcamp.org/tradition/history</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/campers/camp-spirit</loc>
+  <loc>https://www.wlcamp.org/tradition/honor-society</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/campers/evening-program</loc>
+  <loc>https://www.wlcamp.org/tradition/lost-larrys</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/campers/free-swim</loc>
+  <loc>https://www.wlcamp.org/tradition/mission-statement</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/campers/special-programs</loc>
+  <loc>https://www.wlcamp.org/tradition/songs</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/campers/typical-day</loc>
+  <loc>https://www.wlcamp.org/tradition/trustees</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/camper-care</loc>
+  <loc>https://www.wlcamp.org/tradition/wlc-vs-fdl</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/family-camp</loc>
+  <loc>https://www.wlcamp.org/news/calendar</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/forms</loc>
+  <loc>https://www.wlcamp.org/contact-us</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/our-staff</loc>
+  <loc>https://www.wlcamp.org/contact-us/mailing-list</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/sessions-tuitions</loc>
+  <loc>https://www.wlcamp.org/staff</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/parents/why-wlc</loc>
+  <loc>https://www.wlcamp.org/downloads/forms/bob-ditter/special-issues.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/alumni/charitable-giving</loc>
+  <loc>https://www.wlcamp.org/downloads/forms/bob-ditter/early-summer-letter-to-parents.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/alumni/lost-larrys</loc>
+  <loc>https://www.wlcamp.org/downloads/forms/bob-ditter/sensitve-issues.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/alumni/wlc-vs-fdl</loc>
+  <loc>https://www.wlcamp.org/downloads/forms/bob-ditter/the-other-duffle-bag.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tradition/honor-society</loc>
+  <loc>https://www.wlcamp.org/downloads/charitable-giving/charitable-giving-form.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tradition/history</loc>
+  <loc>https://www.wlcamp.org/downloads/charitable-giving/annual-fund-letter.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://wlcamp.org/tradition/songs</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/tradition/trustees</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/tradition/values</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/news/calendar</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/camper-behavior-and-responsibilites.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/camper-confidential.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/camper-enrollment-application.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/camper-health-history.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/camper-health-insurance.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/epi-pen-and-inhaler-authorization.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/letter-from-director.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/parent-checklist.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/parent-confidential.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/parent-guide.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/things-you-need-to-know.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/what-to-bring.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/bob-ditter/special-issues.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/bob-ditter/early-summer-letter-to-parents.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/forms/bob-ditter/the-other-duffle-bag.pdf</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://wlcamp.org/downloads/calendar/2012-01-06-camp-reunion.pdf</loc>
+  <loc>https://www.wlcamp.org/downloads/charitable-giving/501c3-determination-letter.pdf</loc>
+  <lastmod>2017-05-31T08:17:19+00:00</lastmod>
   <changefreq>yearly</changefreq>
 </url>
 </urlset>
