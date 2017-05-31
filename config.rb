@@ -20,8 +20,7 @@ helpers do
     super name, (ENV["RACK_ENV"] == "production" && !(path =~ /^http/) ? path.gsub(".html", "") : path), options
   end
 
- # Columns depricated
-  def vimeo(id, columns = nil)
+  def vimeo(id)
     <<-HTML
       <div class="video embed-responsive embed-responsive-16by9">
         <iframe src="http://player.vimeo.com/video/#{id}?title=0&byline=0&portrait=0" class="embed-responsive-item">
