@@ -1,7 +1,6 @@
 @import hero
 @import images
 @import fonts
-@import links
 @import buttons
 @import homepage
 @import campers
@@ -27,6 +26,12 @@ html
 
   p, ul, table
     margin-top: 0
+    margin-bottom: 0
+
+  p:not(:last-child),
+  ul:not(:last-child),
+  table:not(:last-child),
+  .with-bottom-margin
     margin-bottom: 20px
 
   iframe
@@ -168,5 +173,5 @@ a.navbar-brand
 
 .page-heading
   text-align: center
-  font-size: 4em
+  font-size: 3.4em
   margin: .4em 0 .6em
