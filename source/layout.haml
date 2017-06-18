@@ -1,18 +1,14 @@
 !!! 5
 %html
   %head
-    %link{ :href => 'http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Permanent+Marker', :rel => 'stylesheet', :type => 'text/css' }/
+    %link{ :href => 'https://fonts.googleapis.com/css?family=Amatic+SC:700|Lato:400,400i,700', :rel => 'stylesheet', :type => 'text/css' }/
 
     %meta{ :charset => "utf-8" }/
-    %title= data.page.title
+    %title= "#{data.page.title} - William Lawrence Camp"
     %meta{ :name => "description", :content => data.page.description }/
     %meta{ :name => "author", :content => "" }/
     %meta{ :name => "keywords", :content => "boys overnight summer camp, summer camp, traditional camp, traditional overnight camp, new hampshire summer camps, new hampshire summer camp, summer camps in new hampshire, summer camp new hampshire, summer camps new hampshire, summer camp in new hampshire, overnight summer camps in new hampshire, new hampshire boy camps, boy camps new hampshire" }/
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"}
-
-
-    - background = request.path.gsub('.html', '.jpg')
-    %meta{ :name => "background", :content => "/images/backgrounds/#{File.exists?('source/images/backgrounds/' + background) ? background : 'default.jpg'}" }
 
     %meta{ :name => "og:type", :content => "website" }
     %meta{ :name => "og:title", :content => data.page.title }
@@ -24,6 +20,7 @@
 
     %link{ :href => "/stylesheets/custom.css?v=1", :media => "all", :rel => "stylesheet" }/
 
+    %link{ href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", media: "all", rel: "stylesheet" }
 
     %script{ :src => '/javascripts/libs/modernizr-2.0.6.custom.min.js' }
 
@@ -62,51 +59,22 @@
           = link_to 'William Lawrence Camp', '/', class: 'navbar-brand'
         %div.collapse.navbar-collapse.navbar-ex1-collapse
           %ul.nav.navbar-nav.navbar-right
-            %li=link_to  'Enroll Here', '/enroll.html', {:style=>'color: yellow;font-weight: bold;'}
-            -['tour', 'campers', 'parents', 'tradition', 'news', 'contact-us'].each do |section|
+            %li=link_to  'Enroll', '/enroll', {:style=>'color: yellow;font-weight: bold;'}
+            %li=link_to "Tour", "/tour"
+            %li=link_to "Campers", "/campers"
+            -['parents', 'tradition', 'news', 'contact-us'].each do |section|
               = partial "#{section}/subnavigation"
 
     #wrap
-      #main
+      = yield_content :premain
+      %main
         .container
           = yield
-    #footer_custom
-      .container
-        .row
-          .col-sm-4.col-sm-push-8.col-xs-12
-            =partial "./shared/mailchimp_advertising"
-          .col-sm-8.col-sm-pull-4.col-xs-12
-            .social
-              =link_to image_tag('/images/footer/facebook.png', height: "48"), 'http://facebook.com/williamlawrencecamp', target: :blank
-              =link_to image_tag('/images/footer/youtube.png', height: "48"), 'http://www.youtube.com/user/WilliamLawrenceCamp', target: :blank
-              =link_to image_tag('/images/footer/instagram.png', height: "48"), 'https://instagram.com/williamlawrencecamp/', target: :blank
-              =link_to image_tag('/images/footer/twitter.png', height: "48"), 'https://twitter.com/wlcamp', target: :blank
-              =link_to image_tag('/images/footer/Google-plus.png', height: "48"), 'https://plus.google.com/103058120108267752423/about', target: :blank
-              =link_to image_tag('/images/footer/ACA-logo.png', height:"48"),'http://find.acacamps.org/camp_profile.php?camp_id=1569'
-            %p
-              %address_custom{ style: 'display block' }
-                = link_to "139 Federal Corner Rd, PO Box 52, Ctr Tuftonboro, NH 03816", "/directions.html"
-            %p
-              %span= link_to 'Staff', '/staff.html', target: :blank
-              &nbsp;&middot;&nbsp;
-              %span= link_to 'Contact Us', '/contact-us/contact.html'
-              &nbsp;&middot;&nbsp;
-              %span= mail_to 'knoll@wlcamp.org', 'knoll@wlcamp.org'
-              &nbsp;&middot;&nbsp;
-              603-569-3698
-            %p
-              .copyright
-                &copy; William Lawrence Camp,
-                = Time.now.year
-            %p
-              Webmasters and alumni
-              == #{link_to 'Avand A.', 'http://avandamiri.com'} and
-              Erik H.
 
-    %script{:src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'}
-    %script{:src=>'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'}
-    %script{ :src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" }
-    %script{ :src => '/javascripts/libs/jquery.backstretch.min.js' }
-    %script{ :src => '/javascripts/custom.js' }
+    = partial "partials/footer"
+
+    %script{ src: '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' }
+    %script{ src: '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js' }
+    %script{ src: '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js' }
 
     = yield_content :scripts

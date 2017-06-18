@@ -1,20 +1,15 @@
-html, body
-  height: 100%
+@import hero
+@import images
+@import fonts
+@import buttons
+@import homepage
+@import campers
+@import footer
 
 html
-  background-color: #2B8EF4
-
-  #flash-detect
-    display: none
-    p
-      background: #FC6
-      border: 1px solid #F00
-      padding: 10px 20px
-      margin: 0
-      font-weight: bold
-
-  p.mission-statement
-    font-weight: bold
+  background-color: rgb(216, 225, 202)
+  background-image: url(../images/topo-background.png)
+  background-size: 541px 529px
 
   body:before
     content: ""
@@ -23,53 +18,28 @@ html
     width: 0
     margin-top: -32767px
 
-  body
-    font: 15px / 22px "Bitter", Georgia, serif
-
-  .permanent-marker
-    font-family: 'Permanent Marker', cursive
-
-  .sans-serif
-    font-family: 'Lucida Grande', verdana, sans-serif
-
   h1, h2, h3, h4, h5, h6
     margin: 0
-    font-size: 15px
-    line-height: 22px
+    font-size: inherit
+    line-height: inherit
+    font-weight: 700
 
-  p, ul, table, img, #flash-detect
+  p, ul, table
     margin-top: 0
-    margin-bottom: 22px
-
-  img
-    width: 100%
-    height: 100%
-
-  p:last-child, ul:last-child, table:last-child
     margin-bottom: 0
+
+  p:not(:last-child),
+  ul:not(:last-child),
+  table:not(:last-child),
+  .with-bottom-margin
+    margin-bottom: 20px
 
   iframe
     border: none
     display: block
 
   .shadow
-    border-top: 1px solid rgba(255, 255, 255, 0.3)
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7)
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
-    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7)
-    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7)
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.7)
-
-  .rounded.liner
-    padding-top: 21px
-    padding-bottom: 21px
-
-  .video
-    padding: 2px
-    background: black
-    margin-bottom: 22px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 
   .rounded
     -webkit-border-radius: 6px
@@ -77,70 +47,22 @@ html
     border-radius: 6px
 
   .liner
-    padding: 22px 20px
-    text-shadow: 0 1px 0 white
-    background: #E6E6E6
-    background: rgba(255, 255, 255, 0.9)
+    padding: 1.5em 2em
+    background: white
     margin-bottom: 22px
+    overflow: auto
 
-  #footer_custom
-    font-size: 14px
-    color: #D0D0D0
-    text-shadow: 0 1px 0 black
-    position: relative
-    margin-top: -160px
-    height: auto
-    width: 100%
-    background: #515151
-    background: rgba(0, 0, 0, 0.45)
-    border-top: 1px solid black
-    border-top: 1px solid rgba(0, 0, 0, 0.4)
-    clear: both
-    p
-      margin-bottom: 3px
-      margin-top: 3px
-    a
-      color: #D0D0D0
-      text-decoration: none
-      border-bottom: 1px solid #848484
-      &:link, &:visited
-        color: #FFFFFF
-        text-decoration: none
-        border-bottom: 1px solid #848484
-      &:hover
-        border-bottom: 1px solid #D0D0D0
-    address_custom
-      font-style: normal
-    .social
-      img
-        height: 48px
-        width: auto
-        margin: 5px
-      a
-        text-decoration: none
-        border: none
-        &:link, &:visited, &:hover
-          text-decoration: none
+  @media (max-width: 500px)
+    .liner
+      padding: 1em 1.2em
 
   #wrap
     min-height: 100%
     width: 100%
+    margin-top: 50px
 
-  #main
-    padding-bottom: 160px
-    a
-      color: #022DBF
-      text-decoration: none
-      &:link
-        color: #022DBF
-        text-decoration: none
-      &:hover
-        text-decoration: underline
-      &:visited
-        color: #650096
-
-  #main
-    padding-top: 66px
+  main
+    padding-top: 16px
     h3
       color: #000C51
       font-size: 16px
@@ -148,9 +70,8 @@ html
       margin-bottom: 11px
     h2
       color: #000C51
-      font-size: 20px
-      line-height: 33px
-      margin-bottom: 11px
+      font-size: 1.5em
+      margin-bottom: .5em
       a, a:link, a:visited
         float: right
         color: white
@@ -184,14 +105,6 @@ html
           color: #FFFFFF
           text-decoration: none
 
-  .tagline
-    margin: 10px 0 50px
-    color: #000F60
-    text-shadow: 0 1px 0 #92CBF9
-    text-align: center
-    font-size: 38px
-    line-height: 45px
-
 .unselectable
   -webkit-touch-callout: none
   -webkit-user-select: none
@@ -224,6 +137,7 @@ a.navbar-brand
 .navbar
   background-color: #000075
   color: white
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3)
   li
     a, a:link, a:visited
       color: white
@@ -256,3 +170,8 @@ a.navbar-brand
   .open
     a,a:hover,a:focus
       background-color: #1E3389
+
+.page-heading
+  text-align: center
+  font-size: 3.4em
+  margin: .4em 0 .6em

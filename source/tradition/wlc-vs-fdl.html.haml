@@ -1,33 +1,33 @@
 ---
-title: "Summer Camp Riflery Competition between William Lawrence Camp & Fleur-de-Lis"
+title: "WLC vs. FDL"
 description: "William Lawrence Camp has held a bi-annual riflery match with our sister camp, Fleur-de-Lis, for decades.  Here are the results of those matches."
 ---
 
+%h1.page-heading.amatic
+  = current_page.data.title
+
 %style
   td { text-align: right }
-  \.win, .loss, .tie { text-align: center }
+  \.win, .loss, .tie { text-align: right; }
   \.win { color: green }
   \.loss { color: red }
   \.tie { color: gray }
 
-.row
-  .col-sm-12
-    .liner.shadow.rounded
-      %h2 WLC vs. FDL
-
+.liner.shadow.rounded
+  .row
+    .col-sm-4
       %p
         An epic battle going back decades! Twice a year the brave men of Bill Larry
         prepare their best shooters to battle the ladies of our sister camp, Fleur-de-Lis
         in a match of skill, patience, and guns. Here are the past results of these battles.
-    
-.row
-  .col-md-6.col-sm-9.col-xs-12  
-    .liner.shadow.rounded
-      %table{ style: 'width: 100%' }
-        %tr
-          %th{ style: 'width: 30%; text-align: right' } Year
-          %th{ style: 'width: 35%; text-align: right' } Fleur-de-Lis
-          %th{ style: 'width: 35%; text-align: right' } William Lawrence
+
+    .col-sm-8
+      %table.table{ style: 'width: 100%' }
+        %thead
+          %tr
+            %th{ style: 'width: 30%; text-align: right' } Year
+            %th{ style: 'width: 35%; text-align: right' } Fleur-de-Lis
+            %th{ style: 'width: 35%; text-align: right' } William Lawrence
         %tr
           %td Centennial A team
           %td.loss 477

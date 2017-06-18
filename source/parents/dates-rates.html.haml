@@ -1,64 +1,63 @@
 ---
-title: "Tuition, Scholarships and Session Dates | William Lawrence Camp For Boys"
+title: "Dates & Rates"
 description: "William Lawrence Camp is a traditional overnight summer camp for boys in Center Tuftonboro, New Hampshire.  Important dates and tuition information for the 2014 season."
 ---
 
-%style
-  th.sans-serif { text-align: left; font-size: 11px; line-height: 18px; padding-top: 4px; color: #424242 }
-  th, td { padding: 0 }
-  \#tuition td,
-  \#tuition .center { text-align: center }
+%h1.page-heading.amatic
+  = current_page.data.title
 
-.row
-  .col-xs-12
-    .liner.shadow.rounded
+.liner.shadow.rounded
+  .row
+    .col-xs-12
       %h2 Sessions for 2017
 
       %table.table.table-striped.table-bordered.table-condensed.table-responsive
         %tr
           %th
-          %th.sans-serif Begins
-          %th.sans-serif Ends
-          %th.sans-serif Tuition <br> Enroll by 12/1
-          %th.sans-serif Tuition <br> Regular
+          %th Begins
+          %th Ends
+          %th Tuition <br> Enroll by 12/1
+          %th Tuition <br> Regular
         %tr
-          %th.sans-serif First Session (4 weeks)
+          %th First Session (4 weeks)
           %td June 25
           %td July 22
           %td $3095
           %td $3395
         %tr
-          %th.sans-serif Second Session (3 weeks)
+          %th Second Session (3 weeks)
           %td July 23
           %td August 12
           %td $2395
           %td $2695
         %tr
-          %th.sans-serif Combo Session (5 weeks)
+          %th Combo Session (5 weeks)
           %td July 9
           %td August 12
           %td $3695
           %td $3995
         %tr
-          %th.sans-serif Full Season (7 weeks)
+          %th Full Season (7 weeks)
           %td June 25
           %td August 12
           %td $4950
           %td $5250
-      %br
-      %h3 Two Week Options
+
+      %h2 Two Week Options
 
       %p
         All two week options have a regular tuition of $1995 and an
         introdcutory tuition for new campers of $1795.  Avaliable two week
         sessions are:
+
       %ul
         %li June 25 - July 8
         %li July 9 - July 22
         %li July 23 - August 5
         %li July 30 - August 12
 
-      %h3 Other programs
+      %h2 Other Programs
+
       %table.table.table-striped.table-bordered.table-condensed.table-responsive
         %tr
           %th Program
@@ -81,9 +80,6 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
           %td 6/24 - 8/12
           %td $2625
 
-
-
-
       %p
         The above tuition does not include a recommended $75 - $150 for personal activities
         and store purchases (per four-week session).
@@ -94,6 +90,4 @@ description: "William Lawrence Camp is a traditional overnight summer camp for b
         session, which is 3, 4, 5, or 7 weeks.
 
       %p
-        Please use our
-        = link_to 'Camper Enrollment Application', '/enroll.html'
-        to enroll your son.
+        = link_to 'Enroll Your Son', '/enroll', class: 'btn btn-primary'

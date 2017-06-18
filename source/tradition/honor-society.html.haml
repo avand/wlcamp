@@ -1,26 +1,54 @@
 ---
-title: "Honor Society | William Lawrence Boys Camp"
+title: "Honor Society"
 description: "William Lawrence Camp is a traditional overnight summer camp for boys in Center Tuftonboro, New Hampshire. Part of our tradition is our honor society."
 ---
 
-.row
-  .col-md-6
-    .liner.shadow.rounded
-      %h2 Honor Society
+%h1.page-heading.amatic
+  = current_page.data.title
+
+.liner.shadow.rounded
+  .row
+    .col-sm-6
       %p
-        The highest honor that one can achieve at William Lawrence Camp is to become a member of our Honor Society. Campers must demonstrate an understanding of many camp activities, from those available at the waterfront to the rifle range and everything in between. At all times, they must exhibit unquestioned character and good citizenship while demonstrating the four corner stones of camp: Willingness, Loyalty, Comradeship, and Sportsmanship.
+        The highest honor that one can achieve at William Lawrence Camp is to become a
+        member of our Honor Society. Campers must demonstrate an understanding of many
+        camp activities, from those available at the #{link_to 'waterfront', '/tour#waterfront'}
+        to the #{link_to 'rifle range', '/tour#riflery'} and everything in between. At all times,
+        they must exhibit unquestioned character and good citizenship while demonstrating the
+        four corner stones of camp: Willingness, Loyalty, Comradeship, and Sportsmanship.
+
       %p
-        Skills to be mastered are demonstrated by the completion of a series of eighteen tests. Many of these tests have varying degrees of difficulty to allow campers to have intermediate milestones of their progress along the path to becoming a member of The Honor Society. Passing the first level of the first thirteen tests earns one Pathfinder status. Once the first 13 tests are completed in their entirety, you become a Trailblazer. Once all 18 tests have been passed, one becomes a Woodsman. Achieving this honor is a multi-year endeavor which requires a real commitment.
-  .col-md-6
-    %img.shadow.rounded{ src: '/images/tradition/honor-society-group.png', height: 308, width: 460 }
-.row
-  .col-md-6.col-md-push-6
-    .liner.shadow.rounded
+        Skills to be mastered are demonstrated by the completion of a series of eighteen tests.
+        Many of these tests have varying degrees of difficulty to allow campers to have
+        intermediate milestones of their progress along the path to becoming a member of
+        The Honor Society. Passing the first level of the first thirteen tests earns one
+        Pathfinder status. Once the first 13 tests are completed in their entirety, you become a
+        Trailblazer. Once all 18 tests have been passed, one becomes a Woodsman. Achieving this
+        honor is a multi-year endeavor which requires a real commitment.
+
       %p
-        The Honor Society is one of the longest-standing-traditions at William Lawrence. The entire camp gathers for Evening Program every Monday around the Great Central Fire, grouped by their various Houses, which correspond to their BROG (Blue, Red, Orange and Green) team in the ongoing color war (House of Lakes, House of Mountains, House of Rivers, and House of Forests). Following the traditional ceremony as campfires are lit, the Woodsmen lead community members through various intra-house games. Cheered on by fellow house-mates, participants strive to win not only pride of accomplishment but also points for their House Team. At the conclusion of the evening, the Head Woodsman asks if anyone would like to take the traditional first test, The Test of Resolution, in which the camper must look into the Head Woodsman’s eyes and vow not to speak again until reveille the next morning.
+        The Honor Society is one of the longest-standing-traditions at William Lawrence.
+        The entire camp gathers for Evening Program every Monday around the Great Central
+        Fire, grouped by their various Houses, which correspond to their BROG (Blue, Red,
+        Orange and Green) team in the ongoing color war (House of Lakes, House of Mountains,
+        House of Rivers, and House of Forests). Following the traditional ceremony as campfires
+        are lit, the Woodsmen lead community members through various intra-house games.
+        Cheered on by fellow house-mates, participants strive to win not only pride of accomplishment
+        but also points for their House Team. At the conclusion of the evening, the Head Woodsman
+        asks if anyone would like to take the traditional first test, The Test of Resolution, in
+        which the camper must look into the Head Woodsman’s eyes and vow not to speak again until
+        reveille the next morning.
+
       %p
         We make sure that campers have access to the list of tests during the summer, but we also make the
         =link_to 'list of tests available here','https://www.dropbox.com/s/4pqhogldw7auv5e/THE%20HONOR%20SOCIETY%20Tests.pdf?dl=1', target: :blank
-        on our website. With the exception of the final five, tests may be taken and passed in any order. Each camper’s test progress will be recorded in the office to ensure that test results are not lost.
-  .col-md-6.col-md-pull-6
-    %img.shadow.rounded{ src: '/images/tradition/honor-society-fire.png', height: 308, width: 460 }
+        on our website. With the exception of the final five, tests may be taken and passed in any order. Each camper’s
+        test progress will be recorded in the office to ensure that test results are not lost.
+
+    .col-sm-6
+      .with-bottom-margin
+        %img.rounded{ src: 'images/honor-society-fire.png', alt: "honor society fire" }
+      .with-bottom-margin
+        %img.rounded{ src: 'images/honor-society-fire-closeup.jpg', alt: "honor society fire closeup" }
+      .with-bottom-margin
+        %img.rounded{ src: 'images/honor-society-group.png', alt: "honor society group photo" }

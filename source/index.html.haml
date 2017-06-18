@@ -3,45 +3,87 @@ title: "William Lawrence Camp | Traditional Boys Overnight Summer Camp in New Ha
 description: "William Lawrence Camp is a traditional overnight summer camp for boys in Center Tuftonboro, New Hampshire.  William Lawrence Summer Camp is a wonderful place for boys to learn and grow in a fun and exciting environment.  Boys can participate in traditional camp activities such as sports, projects, hiking and canoeing trips, sailing, waterskiing, climbing, swimming, kayaking, archery, shooting, and just having fun."
 ---
 
+- content_for :premain do
+  .hero-container
+    .hero-content
+      %a{ href: "#", data: { toggle: "modal", target: "#promo-video-modal" } }
+        %img.play{ src: "images/home/play.png", height: 50, width: 50 }
+      .tagline.amatic Discover Summer
+
 .row
-  .col-md-12
-    .tagline.permanent-marker Do Something This Summer!
-.row
-  .col-md-6.col-sm-12.col-xs-12
+  .col-sm-12
     .liner.shadow.rounded
-      %ul
-        %li
-          =link_to "Multiple Session Options","/parents/dates-rates.html"
-          with reasonable tuition allows for family-friendly planning
-        %li
-          =link_to "3:1 Camper to Staff", "/parents/camper-care.html"
-          ratio means your child is in a safe and nurturing setting
-        %li
-          =link_to "Building Character", "/parents/why-wlc.html"
-          since 1913 leads to confident, independent young men
-        %li
-          Listen to how
-          =link_to "Our Parents", "/parents/testimonials.html"
-          feel about William Lawrence Camp
+      %h2 Building Character Since 1913
 
-        %br
-        =link_to "Learn More", "/contact-us/contact.html"
-        about what makes us special
+      %img.supporting-picture.pull-right{ src: '/images/home/archery.jpg', alt: "boy standing in archery range" }
 
-  .col-md-6.col-sm-12.col-xs-12
-    .do-something
-      .video.shadow.rounded.embed-responsive.embed-responsive.embed-responsive-16by9
-        %iframe{ width: "560", height: "315", src: "https://www.youtube.com/embed/bw0tM7kj4fs", frameborder: "0", allowfullscreen: true }
+      %p
+        William Lawrence Camp is an independent, not-for-profit organization; our entire focus is on providing an extraordinary experience for your child that will benefit him for years to come. We believe that the best way for boys to learn is through being active, especially while surrounded by natural beauty.
 
-%br
-= partial "./shared/trifecta"
+      %p
+        Our well-balanced program offers instruction in diverse activities, such as
+        == #{link_to 'archery', '/tour#archery'}, #{link_to 'waterskiing', '/tour#waterskiing'},
+        == and #{link_to 'wilderness trips', '/tour#wilderness-trips'}
+        that your child would likely not be able to participate in at home. And, as a small camp, we do not experience the bottlenecks at popular cativities that larger campes are rife with: if your child is interested in an activity, they will be able to do it.
+
+.row
+  .col-sm-12
+    .benefit.amatic 3:1 Camper to staff ratio
+
+.row
+  .col-sm-4
+    %img.shadow.rounded{ src: '/images/home/fishing.jpg', alt: "fishing" }
+  .col-sm-4
+    %img.shadow.rounded{ src: '/images/home/water-skiing.jpg', alt: "water skiing" }
+  .col-sm-4
+    %img.shadow.rounded{ src: '/images/home/high-ropes.jpg', alt: "high ropes" }
+
+.row
+  .col-sm-12
+    .benefit.amatic Flexible, family-friendly dates
+
+.row
+  .col-sm-12
+    .liner.shadow.rounded
+      %h2 Our Philosophy
+
+      %img.supporting-picture.pull-right{ src: '/images/home/campers.jpg', alt: "campers standing in a group" }
+
+      %p
+        Through a fun, balanced program, in a camp family atmosphere with positive role models, William Lawrence Camp encourages the intellectual, social, emotional, and physical development of the whole boy in a caring, nurturing, spirited, challenging, yet safe environment. While allowing a kid to be a kid, the camp seeks to enhance positive values and skill development leading to a productive and responsible adulthood.
+
+.row
+  .col-sm-6
+    .liner.shadow.rounded
+      %h2 Parents
+
+      %p
+        At our boys overnight summer camp, your son can learn new skills, develop self-confidence and make friends that last a lifetime.
+
+      %div
+        %a{ href: "/tour", class: "btn btn-primary" } Take a Tour
+  .col-sm-6
+    .liner.shadow.rounded
+      %h2 Campers
+
+      %p
+        Our summer camp remains committed to providing boys with fun activities while giving them a chance to learn some new skills.
+
+      %div
+        %a{ href: "/campers", class: "btn btn-primary" } Explore the Fun!
 
 
-- content_for :scripts do
-  :javascript
-    $(document).ready(function() {
-      $(".play").click(function() {
-        $(".slideshow, .play").hide();
-        $(".do-something .video").show().html('#{vimeo 33915926, 6}');
-      })
-    })
+#promo-video-modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button{ type: "button", class: "close", data: { dismiss: "modal" }, 'aria-label' => "Close" }
+          %span{ 'aria-hidden' => true }
+            &times;
+        %h4 Discover Summer
+
+      .modal-body
+        #promo-video-container.embed-responsive.embed-responsive-16by9
+          #promo-video.embed-responsive-item
+
+%script{ :src => 'javascripts/homepage-hero-video.js' }
